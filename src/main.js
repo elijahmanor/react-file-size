@@ -82,8 +82,8 @@ VERSIONS.forEach( ( version, index ) => {
 		shell.exec( `curl https://cdnjs.cloudflare.com/ajax/libs/react/${ version }/react.min.js --output vendor/react-${ version }.min.js` );
 	}
 	const reactMinifiedGzipped = shell.exec( `gzipped vendor/react-${ version }.min.js`, { silent: true } ).output;
-	const [ , size, sizeGzipped ] = gzippedRegex.exec( reactGzipped );
-	const [ , minified, minifiedGzipped ] = gzippedRegex.exec( reactMinifiedGzipped );
+	const [ , size, sizeGzipped ] = gzippedRegex.exec( reactGzipped ); // jscs:ignore
+	const [ , minified, minifiedGzipped ] = gzippedRegex.exec( reactMinifiedGzipped ); // jscs:ignore
 
 	DATA.versions.push( {
 		version,
@@ -93,7 +93,7 @@ VERSIONS.forEach( ( version, index ) => {
 		minifiedGzipped
 	} );
 
-	logUpdate( `Progress... ${ ( ( ( index + 1 ) / VERSIONS.length ) * 100 ).toFixed( 1 ) }% - v${version}` );
+	logUpdate( `Progress... ${ ( ( ( index + 1 ) / VERSIONS.length ) * 100 ).toFixed( 1 ) }% - v${version}` ); // eslint-disable-line no-magic-numbers
 } );
 
 fs.writeFileSync( "data.json", JSON.stringify( DATA, null, 2 ), "utf8" );

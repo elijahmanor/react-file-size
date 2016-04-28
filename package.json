@@ -7,15 +7,16 @@
     "react-file-size": "./index.js"
   },
   "scripts": {
-    "lint": "jscs ./ && eslint ./",
-    "lint:fix": "jscs ./ --fix && eslint ./ --fix",
+    "lint": "jscs src/main.js && eslint src/main.js",
+    "lint:fix": "jscs src/main.js --fix && eslint src/main.js --fix",
     "build": "npm run build:html && npm run build:css && npm run build:js && npm run uglify",
     "build:html": "jade --obj data.json src/index.jade --out public/",
     "build:css": "node-sass src/index.scss public/index.css",
     "build:js": "mustache data.json src/index.mustache.js > public/index.js",
     "uglify": "npm run uglify:js && npm run uglify:css",
     "uglify:js": "uglifyjs public/index.js -o public/index.min.js",
-    "uglify:css": "node-sass src/index.scss public/index.min.css --output-style=compressed"
+    "uglify:css": "node-sass src/index.scss public/index.min.css --output-style=compressed",
+    "publish": "git subtree push --prefix public origin gh-pages"
   },
   "author": "Elijah Manor",
   "license": "MIT",
@@ -41,7 +42,7 @@
     "eslint-config-leankit": "^1.1.0",
     "gzipped": "0.0.5",
     "jade": "^1.11.0",
-    "jscs": "^2.9.0",
+    "jscs": "^2.11.0",
     "mustache": "^2.2.1",
     "node-sass": "^3.6.0",
     "onchange": "^2.0.0",
