@@ -7,6 +7,7 @@
     "react-file-size": "./index.js"
   },
   "scripts": {
+    "start": "node index.js",
     "lint": "jscs src/main.js && eslint src/main.js",
     "lint:fix": "jscs src/main.js --fix && eslint src/main.js --fix",
     "build": "npm run build:html && npm run build:css && npm run build:js && npm run uglify",
