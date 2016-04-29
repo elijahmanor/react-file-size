@@ -6,10 +6,10 @@ http://elijahmanor.com/react-file-size
 
 ## npm scripts
 
-| Script  | Description |
-| ------- | ----------- |
-| start   | Pulls down react versions from cdnjs and gathers statistics |
-| lint    | Runs ESLint and JSCS against the JavaScript |
-| build   | Compiles the Jade, Mustache, and Sass then uglifies |
-| uglify  | Minifies the JavaScript and CSS |
-| publish | Pushes to gh-pages |
+| Script   | Description |
+| -------- | ----------- |
+| start    | Pulls down react versions from cdnjs and gathers statistics |
+| lint     | Runs ESLint and JSCS against the JavaScript |
+| build    | Compiles the Jade, Mustache, and Sass then uglifies |
+| uglify   | Minifies the JavaScript and CSS |
+| gh-pages | Pushes to gh-pages |
