@@ -9,6 +9,13 @@ body {
 	margin: 2rem;
 }
 
+.GithubButtons {
+	display: flex;
+	justify-content: flex-end;
+	iframe, a { margin-right: 1rem; }
+	iframe:last-child { margin-right: 0; }
+}
+
 .table th,
 .table td {
 	text-align: right;

@@ -9,6 +9,11 @@ html.no-js
 		link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
 		link(rel='stylesheet', href='./index.min.css')
 	body
+		div(class='GithubButtons')
+			a(href="https://twitter.com/share" class="twitter-share-button" data-via="elijahmanor") Tweet
+			a(href="https://twitter.com/elijahmanor" class="twitter-follow-button" data-show-count="false") Follow @elijahmanor
+			iframe(src="https://ghbtns.com/github-btn.html?user=elijahmanor&repo=react-file-size&type=star" frameborder="0" scrolling="0" width="51px" height="20px")
+			iframe(src="https://ghbtns.com/github-btn.html?user=elijahmanor&repo=react-file-size&type=fork" frameborder="0" scrolling="0" width="53px" height="20px")
 		h1 React File Size
 		p
 			a(href='https://facebook.github.io/react/') Facebook's React Library
@@ -38,13 +43,14 @@ html.no-js
 		script(src='//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.6.1/lodash.min.js')
 		script(src='//www.gstatic.com/charts/loader.js')
 		script(src='./index.min.js')
-		//-
-			script
-				(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-				function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-				e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-				e.src='//www.google-analytics.com/analytics.js';
-				r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-				ga('create','UA-62341839-1');ga('send','pageview');
+		script
+			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+		script
+			| (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+			| function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+			| e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+			| e.src='//www.google-analytics.com/analytics.js';
+			| r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+			| ga('create','UA-62341839-1');ga('send','pageview');
 		script(src="//static.getclicky.com/js")
 		script try{ clicky.init(116099); }catch(e){}

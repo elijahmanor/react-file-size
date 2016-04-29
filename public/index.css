@@ -363,6 +363,14 @@ html {
 body {
   margin: 2rem; }
 
+.GithubButtons {
+  display: flex;
+  justify-content: flex-end; }
+  .GithubButtons iframe, .GithubButtons a {
+    margin-right: 1rem; }
+  .GithubButtons iframe:last-child {
+    margin-right: 0; }
+
 .table th,
 .table td {
   text-align: right;
