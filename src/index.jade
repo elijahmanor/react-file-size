@@ -20,6 +20,18 @@
 -   return (neg ? '-' : '') + num + ' ' + unit;
 - }
 
+mixin tableData(data, prev)
+	- var change = prev ? ( data - prev ) : 0;
+	- var sign = change > 0 ? "+" : change < 0 ? "-" : "";
+	if data
+		td
+			| #{data.toLocaleString()}&nbsp;
+			span bytes<br/>(#{prettyBytes( data )})
+			i(class="#{ change > 0	 ? 'decrease' : 'increase'}") Δ #{ sign }#{ prettyBytes(Math.abs(change)) }
+	else
+		td
+			&ndash;
+
 doctype
 html.no-js
 	head
@@ -56,12 +68,13 @@ html.no-js
 						th react-dom.min.js
 				tbody
 					each version, i in combined
+						- var previous = combined[ i - 1 ];
 						tr
 							td #{version.version}
-							td #{prettyBytes( version.react )}
-							td #{prettyBytes( version.reactMin )}
-							td #{version.reactDom ? prettyBytes( version.reactDom ) : "-"}
-							td #{version.reactDomMin ? prettyBytes( version.reactDomMin ) : "-"}
+							+ tableData(version.react, previous ? previous.react : null)
+							+ tableData(version.reactMin, previous ? previous.reactMin : null)
+							+ tableData(version.reactDom, previous ? previous.reactDom : null)
+							+ tableData(version.reactDomMin, previous ? previous.reactDomMin : null)
 		hr
 		div(id="linechart_material")
 		script(src='//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.6.1/lodash.min.js')

@@ -375,6 +375,24 @@ body {
 .table td {
   text-align: right;
   width: 20%; }
+  .table th span,
+  .table td span {
+    display: none; }
+  .table th i,
+  .table td i {
+    display: none; }
+
+i.increase {
+  color: green; }
+
+i.decrease {
+  color: red; }
+
+.table tr:hover span {
+  display: inline; }
+
+.table tr:hover i {
+  display: block; }
 
 .table th:first-child,
 .table td:first-child {

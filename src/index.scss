@@ -20,6 +20,17 @@ body {
 .table td {
 	text-align: right;
 	width: 20%;
+
+	span { display: none; }
+	i { display: none; }
+}
+
+i.increase { color: green; }
+i.decrease { color: red; }
+
+.table tr:hover {
+	span { display: inline; }
+	i { display: block; }
 }
 
 .table th:first-child,
