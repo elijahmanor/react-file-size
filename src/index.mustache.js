@@ -1,13 +1,15 @@
 var versions = [
-	{{#versions}}
+	{{#combined}}
 	{
 		version: "{{version}}",
-		size: "{{size}}",
-		sizeGzipped: "{{sizeGzipped}}",
-		minified: "{{minified}}",
-		minifiedGzipped: "{{minifiedGzipped}}",
+		"react.js": "{{react}}",
+		"react.js.gz": "{{reactGz}}",
+		"react.min.js": "{{reactMin}}",
+		"react.min.js.gz": "{{reactMinGz}}",
+		"react-dom.js": "{{reactDom}}",
+		"react-dom.min.js": "{{reactDomMin}}",
 	},
-	{{/versions}}
+	{{/combined}}
 ];
 
 google.charts.load( 'current', { 'packages': [ 'line' ] } );
@@ -21,15 +23,19 @@ function drawChart() {
 	data.addColumn('number', 'react.js.gz');
 	data.addColumn('number', 'react.min.js');
 	data.addColumn('number', 'react.min.js.gz');
+	data.addColumn('number', 'react-dom.js');
+	data.addColumn('number', 'react-dom.min.js');
 
 	data.addRows(
 		_.map( versions, function( version ) {
 			return [
 				version.version,
-				parseFloat( version.size ),
-				parseFloat( version.sizeGzipped ),
-				parseFloat( version.minified ),
-				parseFloat( version.minifiedGzipped )
+				parseFloat( version[ "react.js" ] ),
+				parseFloat( version[ "react.js.gz" ] ),
+				parseFloat( version[ "react.min.js" ] ),
+				parseFloat( version[ "react.min.js.gz" ] ),
+				parseFloat( version[ "react-dom.js" ] ),
+				parseFloat( version[ "react-dom.min.js" ] )
 			];
 		} )
 	);

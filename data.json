@@ -1,424 +1,729 @@
 {
-  "versions": [
+  "react": {
+    "versions": [
+      {
+        "version": "0.3.0",
+        "size": 271893,
+        "sizeGzipped": 60254,
+        "minified": 62213,
+        "minifiedGzipped": 18060
+      },
+      {
+        "version": "0.3.1",
+        "size": 271893,
+        "sizeGzipped": 60296,
+        "minified": 62213,
+        "minifiedGzipped": 18060
+      },
+      {
+        "version": "0.3.2",
+        "size": 271893,
+        "sizeGzipped": 60296,
+        "minified": 62213,
+        "minifiedGzipped": 18063
+      },
+      {
+        "version": "0.3.3",
+        "size": 272097,
+        "sizeGzipped": 60335,
+        "minified": 62311,
+        "minifiedGzipped": 18089
+      },
+      {
+        "version": "0.4.0",
+        "size": 355743,
+        "sizeGzipped": 75106,
+        "minified": 76815,
+        "minifiedGzipped": 21677
+      },
+      {
+        "version": "0.4.1",
+        "size": 360142,
+        "sizeGzipped": 75468,
+        "minified": 77547,
+        "minifiedGzipped": 21811
+      },
+      {
+        "version": "0.4.2",
+        "size": 359939,
+        "sizeGzipped": 75411,
+        "minified": 77355,
+        "minifiedGzipped": 21758
+      },
+      {
+        "version": "0.5.0",
+        "size": 443624,
+        "sizeGzipped": 92061,
+        "minified": 92797,
+        "minifiedGzipped": 25969
+      },
+      {
+        "version": "0.5.1",
+        "size": 444062,
+        "sizeGzipped": 92157,
+        "minified": 92974,
+        "minifiedGzipped": 26024
+      },
+      {
+        "version": "0.5.2",
+        "size": 444084,
+        "sizeGzipped": 92160,
+        "minified": 92977,
+        "minifiedGzipped": 26025
+      },
+      {
+        "version": "0.6.0",
+        "size": 105852,
+        "sizeGzipped": 25736,
+        "minified": 41933,
+        "minifiedGzipped": 12284
+      },
+      {
+        "version": "0.6.1",
+        "size": 97834,
+        "sizeGzipped": 23606,
+        "minified": 38708,
+        "minifiedGzipped": 10937
+      },
+      {
+        "version": "0.6.2",
+        "size": 97909,
+        "sizeGzipped": 23515,
+        "minified": 39894,
+        "minifiedGzipped": 11600
+      },
+      {
+        "version": "0.6.3",
+        "size": 98472,
+        "sizeGzipped": 23586,
+        "minified": 40298,
+        "minifiedGzipped": 11666
+      },
+      {
+        "version": "0.7.0",
+        "size": 99322,
+        "sizeGzipped": 23744,
+        "minified": 40760,
+        "minifiedGzipped": 11784
+      },
+      {
+        "version": "0.7.1",
+        "size": 99322,
+        "sizeGzipped": 23744,
+        "minified": 40760,
+        "minifiedGzipped": 11784
+      },
+      {
+        "version": "0.8.0",
+        "size": 458736,
+        "sizeGzipped": 94042,
+        "minified": 94460,
+        "minifiedGzipped": 26490
+      },
+      {
+        "version": "0.9.0",
+        "size": 528848,
+        "sizeGzipped": 107630,
+        "minified": 108607,
+        "minifiedGzipped": 30241
+      },
+      {
+        "version": "0.10.0",
+        "size": 549985,
+        "sizeGzipped": 111616,
+        "minified": 112351,
+        "minifiedGzipped": 30949
+      },
+      {
+        "version": "0.11.0",
+        "size": 592869,
+        "sizeGzipped": 121266,
+        "minified": 126275,
+        "minifiedGzipped": 34576
+      },
+      {
+        "version": "0.11.1",
+        "size": 593628,
+        "sizeGzipped": 121514,
+        "minified": 126354,
+        "minifiedGzipped": 34596
+      },
+      {
+        "version": "0.11.2",
+        "size": 594461,
+        "sizeGzipped": 121723,
+        "minified": 126490,
+        "minifiedGzipped": 34643
+      },
+      {
+        "version": "0.12.0",
+        "size": 570900,
+        "sizeGzipped": 125763,
+        "minified": 130289,
+        "minifiedGzipped": 35776
+      },
+      {
+        "version": "0.12.1",
+        "size": 571026,
+        "sizeGzipped": 125848,
+        "minified": 130289,
+        "minifiedGzipped": 35776
+      },
+      {
+        "version": "0.12.2",
+        "size": 571784,
+        "sizeGzipped": 126053,
+        "minified": 130436,
+        "minifiedGzipped": 35818
+      },
+      {
+        "version": "0.13.0",
+        "size": 598400,
+        "sizeGzipped": 134009,
+        "minified": 120732,
+        "minifiedGzipped": 35907
+      },
+      {
+        "version": "0.13.1",
+        "size": 598504,
+        "sizeGzipped": 134030,
+        "minified": 120797,
+        "minifiedGzipped": 35923
+      },
+      {
+        "version": "0.13.2",
+        "size": 599376,
+        "sizeGzipped": 134165,
+        "minified": 121458,
+        "minifiedGzipped": 35941
+      },
+      {
+        "version": "0.13.3",
+        "size": 600572,
+        "sizeGzipped": 134488,
+        "minified": 121738,
+        "minifiedGzipped": 36037
+      },
+      {
+        "version": "0.14.0",
+        "size": 640047,
+        "sizeGzipped": 144251,
+        "minified": 135334,
+        "minifiedGzipped": 39290
+      },
+      {
+        "version": "0.14.1",
+        "size": 640971,
+        "sizeGzipped": 144450,
+        "minified": 135480,
+        "minifiedGzipped": 39336
+      },
+      {
+        "version": "0.14.2",
+        "size": 641226,
+        "sizeGzipped": 144515,
+        "minified": 135543,
+        "minifiedGzipped": 39367
+      },
+      {
+        "version": "0.14.3",
+        "size": 641366,
+        "sizeGzipped": 144540,
+        "minified": 135618,
+        "minifiedGzipped": 39387
+      },
+      {
+        "version": "0.14.4",
+        "size": 641356,
+        "sizeGzipped": 144517,
+        "minified": 135528,
+        "minifiedGzipped": 39367
+      },
+      {
+        "version": "0.14.5",
+        "size": 641356,
+        "sizeGzipped": 144517,
+        "minified": 135528,
+        "minifiedGzipped": 39367
+      },
+      {
+        "version": "0.14.6",
+        "size": 641479,
+        "sizeGzipped": 144554,
+        "minified": 135572,
+        "minifiedGzipped": 39377
+      },
+      {
+        "version": "0.14.7",
+        "size": 641547,
+        "sizeGzipped": 144586,
+        "minified": 135581,
+        "minifiedGzipped": 39389
+      },
+      {
+        "version": "0.14.8",
+        "size": 641672,
+        "sizeGzipped": 144623,
+        "minified": 135647,
+        "minifiedGzipped": 39384
+      },
+      {
+        "version": "15.0.0",
+        "size": 655607,
+        "sizeGzipped": 148523,
+        "minified": 145410,
+        "minifiedGzipped": 42657
+      },
+      {
+        "version": "15.0.1",
+        "size": 656686,
+        "sizeGzipped": 148818,
+        "minified": 145685,
+        "minifiedGzipped": 42735
+      }
+    ]
+  },
+  "react-dom": {
+    "versions": [
+      {
+        "version": "0.14.0",
+        "size": 1170,
+        "sizeGzipped": 627,
+        "minified": 706,
+        "minifiedGzipped": 431
+      },
+      {
+        "version": "0.14.1",
+        "size": 1170,
+        "sizeGzipped": 627,
+        "minified": 706,
+        "minifiedGzipped": 431
+      },
+      {
+        "version": "0.14.2",
+        "size": 1170,
+        "sizeGzipped": 628,
+        "minified": 706,
+        "minifiedGzipped": 431
+      },
+      {
+        "version": "0.14.3",
+        "size": 1170,
+        "sizeGzipped": 627,
+        "minified": 706,
+        "minifiedGzipped": 431
+      },
+      {
+        "version": "0.14.4",
+        "size": 1170,
+        "sizeGzipped": 627,
+        "minified": 706,
+        "minifiedGzipped": 431
+      },
+      {
+        "version": "0.14.5",
+        "size": 1170,
+        "sizeGzipped": 627,
+        "minified": 706,
+        "minifiedGzipped": 431
+      },
+      {
+        "version": "0.14.6",
+        "size": 1170,
+        "sizeGzipped": 627,
+        "minified": 706,
+        "minifiedGzipped": 432
+      },
+      {
+        "version": "0.14.7",
+        "size": 1171,
+        "sizeGzipped": 627,
+        "minified": 706,
+        "minifiedGzipped": 432
+      },
+      {
+        "version": "0.14.8",
+        "size": 1171,
+        "sizeGzipped": 627,
+        "minified": 706,
+        "minifiedGzipped": 432
+      },
+      {
+        "version": "15.0.0",
+        "size": 1174,
+        "sizeGzipped": 628,
+        "minified": 709,
+        "minifiedGzipped": 432
+      },
+      {
+        "version": "15.0.1",
+        "size": 1174,
+        "sizeGzipped": 628,
+        "minified": 709,
+        "minifiedGzipped": 432
+      }
+    ]
+  },
+  "combined": [
     {
       "version": "0.3.0",
-      "size": "271.89 kB",
-      "sizeGzipped": "60.51 kB",
-      "minified": "62.21 kB",
-      "minifiedGzipped": "18.11 kB"
+      "react": 271893,
+      "reactGz": 60254,
+      "reactMin": 62213,
+      "reactMinGz": 18060,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.3.1",
-      "size": "271.89 kB",
-      "sizeGzipped": "60.57 kB",
-      "minified": "62.21 kB",
-      "minifiedGzipped": "18.11 kB"
+      "react": 271893,
+      "reactGz": 60296,
+      "reactMin": 62213,
+      "reactMinGz": 18060,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.3.2",
-      "size": "271.89 kB",
-      "sizeGzipped": "60.57 kB",
-      "minified": "62.21 kB",
-      "minifiedGzipped": "18.11 kB"
+      "react": 271893,
+      "reactGz": 60296,
+      "reactMin": 62213,
+      "reactMinGz": 18063,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.3.3",
-      "size": "272.10 kB",
-      "sizeGzipped": "60.61 kB",
-      "minified": "62.31 kB",
-      "minifiedGzipped": "18.14 kB"
+      "react": 272097,
+      "reactGz": 60335,
+      "reactMin": 62311,
+      "reactMinGz": 18089,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.4.0",
-      "size": "355.74 kB",
-      "sizeGzipped": "75.47 kB",
-      "minified": "76.81 kB",
-      "minifiedGzipped": "21.79 kB"
+      "react": 355743,
+      "reactGz": 75106,
+      "reactMin": 76815,
+      "reactMinGz": 21677,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.4.1",
-      "size": "360.14 kB",
-      "sizeGzipped": "75.84 kB",
-      "minified": "77.55 kB",
-      "minifiedGzipped": "21.92 kB"
+      "react": 360142,
+      "reactGz": 75468,
+      "reactMin": 77547,
+      "reactMinGz": 21811,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.4.2",
-      "size": "359.94 kB",
-      "sizeGzipped": "75.78 kB",
-      "minified": "77.36 kB",
-      "minifiedGzipped": "21.86 kB"
+      "react": 359939,
+      "reactGz": 75411,
+      "reactMin": 77355,
+      "reactMinGz": 21758,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.5.0",
-      "size": "443.62 kB",
-      "sizeGzipped": "92.54 kB",
-      "minified": "92.80 kB",
-      "minifiedGzipped": "26.10 kB"
+      "react": 443624,
+      "reactGz": 92061,
+      "reactMin": 92797,
+      "reactMinGz": 25969,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.5.1",
-      "size": "444.06 kB",
-      "sizeGzipped": "92.64 kB",
-      "minified": "92.97 kB",
-      "minifiedGzipped": "26.15 kB"
+      "react": 444062,
+      "reactGz": 92157,
+      "reactMin": 92974,
+      "reactMinGz": 26024,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.5.2",
-      "size": "444.08 kB",
-      "sizeGzipped": "92.64 kB",
-      "minified": "92.98 kB",
-      "minifiedGzipped": "26.15 kB"
+      "react": 444084,
+      "reactGz": 92160,
+      "reactMin": 92977,
+      "reactMinGz": 26025,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.6.0",
-      "size": "105.85 kB",
-      "sizeGzipped": "25.85 kB",
-      "minified": "41.93 kB",
-      "minifiedGzipped": "12.29 kB"
+      "react": 105852,
+      "reactGz": 25736,
+      "reactMin": 41933,
+      "reactMinGz": 12284,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.6.1",
-      "size": "97.83 kB",
-      "sizeGzipped": "23.71 kB",
-      "minified": "38.71 kB",
-      "minifiedGzipped": "10.95 kB"
+      "react": 97834,
+      "reactGz": 23606,
+      "reactMin": 38708,
+      "reactMinGz": 10937,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.6.2",
-      "size": "97.91 kB",
-      "sizeGzipped": "23.59 kB",
-      "minified": "39.89 kB",
-      "minifiedGzipped": "11.61 kB"
+      "react": 97909,
+      "reactGz": 23515,
+      "reactMin": 39894,
+      "reactMinGz": 11600,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.6.3",
-      "size": "98.47 kB",
-      "sizeGzipped": "23.66 kB",
-      "minified": "40.30 kB",
-      "minifiedGzipped": "11.67 kB"
+      "react": 98472,
+      "reactGz": 23586,
+      "reactMin": 40298,
+      "reactMinGz": 11666,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.7.0",
-      "size": "99.32 kB",
-      "sizeGzipped": "23.81 kB",
-      "minified": "40.76 kB",
-      "minifiedGzipped": "11.79 kB"
+      "react": 99322,
+      "reactGz": 23744,
+      "reactMin": 40760,
+      "reactMinGz": 11784,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.7.1",
-      "size": "99.32 kB",
-      "sizeGzipped": "23.81 kB",
-      "minified": "40.76 kB",
-      "minifiedGzipped": "11.79 kB"
+      "react": 99322,
+      "reactGz": 23744,
+      "reactMin": 40760,
+      "reactMinGz": 11784,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.8.0",
-      "size": "458.74 kB",
-      "sizeGzipped": "94.59 kB",
-      "minified": "94.46 kB",
-      "minifiedGzipped": "26.60 kB"
+      "react": 458736,
+      "reactGz": 94042,
+      "reactMin": 94460,
+      "reactMinGz": 26490,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.9.0",
-      "size": "528.85 kB",
-      "sizeGzipped": "108.20 kB",
-      "minified": "108.61 kB",
-      "minifiedGzipped": "30.40 kB"
-    },
-    {
-      "version": "0.9.0-rc1",
-      "size": "525.25 kB",
-      "sizeGzipped": "107.62 kB",
-      "minified": "108.83 kB",
-      "minifiedGzipped": "30.46 kB"
+      "react": 528848,
+      "reactGz": 107630,
+      "reactMin": 108607,
+      "reactMinGz": 30241,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.10.0",
-      "size": "549.99 kB",
-      "sizeGzipped": "112.21 kB",
-      "minified": "112.35 kB",
-      "minifiedGzipped": "31.10 kB"
-    },
-    {
-      "version": "0.10.0-rc1",
-      "size": "549.99 kB",
-      "sizeGzipped": "112.21 kB",
-      "minified": "112.36 kB",
-      "minifiedGzipped": "31.11 kB"
+      "react": 549985,
+      "reactGz": 111616,
+      "reactMin": 112351,
+      "reactMinGz": 30949,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.11.0",
-      "size": "592.87 kB",
-      "sizeGzipped": "121.87 kB",
-      "minified": "126.28 kB",
-      "minifiedGzipped": "34.79 kB"
-    },
-    {
-      "version": "0.11.0-rc1",
-      "size": "592.53 kB",
-      "sizeGzipped": "121.77 kB",
-      "minified": "126.20 kB",
-      "minifiedGzipped": "34.76 kB"
+      "react": 592869,
+      "reactGz": 121266,
+      "reactMin": 126275,
+      "reactMinGz": 34576,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.11.1",
-      "size": "593.63 kB",
-      "sizeGzipped": "122.12 kB",
-      "minified": "126.35 kB",
-      "minifiedGzipped": "34.81 kB"
+      "react": 593628,
+      "reactGz": 121514,
+      "reactMin": 126354,
+      "reactMinGz": 34596,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.11.2",
-      "size": "594.46 kB",
-      "sizeGzipped": "122.32 kB",
-      "minified": "126.49 kB",
-      "minifiedGzipped": "34.85 kB"
+      "react": 594461,
+      "reactGz": 121723,
+      "reactMin": 126490,
+      "reactMinGz": 34643,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.12.0",
-      "size": "570.90 kB",
-      "sizeGzipped": "126.32 kB",
-      "minified": "130.29 kB",
-      "minifiedGzipped": "35.96 kB"
-    },
-    {
-      "version": "0.12.0-rc1",
-      "size": "569.96 kB",
-      "sizeGzipped": "126.08 kB",
-      "minified": "130.25 kB",
-      "minifiedGzipped": "35.94 kB"
+      "react": 570900,
+      "reactGz": 125763,
+      "reactMin": 130289,
+      "reactMinGz": 35776,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.12.1",
-      "size": "571.03 kB",
-      "sizeGzipped": "126.41 kB",
-      "minified": "130.29 kB",
-      "minifiedGzipped": "35.96 kB"
+      "react": 571026,
+      "reactGz": 125848,
+      "reactMin": 130289,
+      "reactMinGz": 35776,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.12.2",
-      "size": "571.78 kB",
-      "sizeGzipped": "126.62 kB",
-      "minified": "130.44 kB",
-      "minifiedGzipped": "36.00 kB"
+      "react": 571784,
+      "reactGz": 126053,
+      "reactMin": 130436,
+      "reactMinGz": 35818,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.13.0",
-      "size": "598.40 kB",
-      "sizeGzipped": "134.61 kB",
-      "minified": "120.73 kB",
-      "minifiedGzipped": "36.09 kB"
-    },
-    {
-      "version": "0.13.0-alpha.1",
-      "size": "584.10 kB",
-      "sizeGzipped": "128.31 kB",
-      "minified": "134.37 kB",
-      "minifiedGzipped": "36.91 kB"
-    },
-    {
-      "version": "0.13.0-alpha.2",
-      "size": "578.77 kB",
-      "sizeGzipped": "128.35 kB",
-      "minified": "117.42 kB",
-      "minifiedGzipped": "34.35 kB"
-    },
-    {
-      "version": "0.13.0-beta.1",
-      "size": "576.55 kB",
-      "sizeGzipped": "128.53 kB",
-      "minified": "115.84 kB",
-      "minifiedGzipped": "34.10 kB"
-    },
-    {
-      "version": "0.13.0-beta.2",
-      "size": "587.92 kB",
-      "sizeGzipped": "130.73 kB",
-      "minified": "116.60 kB",
-      "minifiedGzipped": "34.19 kB"
-    },
-    {
-      "version": "0.13.0-rc1",
-      "size": "595.65 kB",
-      "sizeGzipped": "134.09 kB",
-      "minified": "119.85 kB",
-      "minifiedGzipped": "35.89 kB"
-    },
-    {
-      "version": "0.13.0-rc2",
-      "size": "597.89 kB",
-      "sizeGzipped": "134.46 kB",
-      "minified": "120.71 kB",
-      "minifiedGzipped": "36.09 kB"
+      "react": 598400,
+      "reactGz": 134009,
+      "reactMin": 120732,
+      "reactMinGz": 35907,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.13.1",
-      "size": "598.50 kB",
-      "sizeGzipped": "134.63 kB",
-      "minified": "120.80 kB",
-      "minifiedGzipped": "36.10 kB"
+      "react": 598504,
+      "reactGz": 134030,
+      "reactMin": 120797,
+      "reactMinGz": 35923,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.13.2",
-      "size": "599.38 kB",
-      "sizeGzipped": "134.77 kB",
-      "minified": "121.46 kB",
-      "minifiedGzipped": "36.11 kB"
+      "react": 599376,
+      "reactGz": 134165,
+      "reactMin": 121458,
+      "reactMinGz": 35941,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.13.3",
-      "size": "600.57 kB",
-      "sizeGzipped": "135.09 kB",
-      "minified": "121.74 kB",
-      "minifiedGzipped": "36.21 kB"
+      "react": 600572,
+      "reactGz": 134488,
+      "reactMin": 121738,
+      "reactMinGz": 36037,
+      "reactDom": 0,
+      "reactDomMin": 0
     },
     {
       "version": "0.14.0",
-      "size": "640.05 kB",
-      "sizeGzipped": "144.87 kB",
-      "minified": "135.33 kB",
-      "minifiedGzipped": "39.45 kB"
-    },
-    {
-      "version": "0.14.0-alpha1",
-      "size": "602.65 kB",
-      "sizeGzipped": "136.88 kB",
-      "minified": "123.77 kB",
-      "minifiedGzipped": "36.80 kB"
-    },
-    {
-      "version": "0.14.0-alpha2",
-      "size": "607.83 kB",
-      "sizeGzipped": "137.98 kB",
-      "minified": "124.04 kB",
-      "minifiedGzipped": "36.82 kB"
-    },
-    {
-      "version": "0.14.0-alpha3",
-      "size": "607.17 kB",
-      "sizeGzipped": "137.57 kB",
-      "minified": "125.29 kB",
-      "minifiedGzipped": "36.97 kB"
-    },
-    {
-      "version": "0.14.0-beta1",
-      "size": "610.80 kB",
-      "sizeGzipped": "138.19 kB",
-      "minified": "125.60 kB",
-      "minifiedGzipped": "36.95 kB"
-    },
-    {
-      "version": "0.14.0-beta2",
-      "size": "622.73 kB",
-      "sizeGzipped": "140.35 kB",
-      "minified": "131.36 kB",
-      "minifiedGzipped": "38.20 kB"
-    },
-    {
-      "version": "0.14.0-beta3",
-      "size": "622.71 kB",
-      "sizeGzipped": "140.32 kB",
-      "minified": "131.34 kB",
-      "minifiedGzipped": "38.19 kB"
-    },
-    {
-      "version": "0.14.0-rc1",
-      "size": "633.15 kB",
-      "sizeGzipped": "142.99 kB",
-      "minified": "134.45 kB",
-      "minifiedGzipped": "39.14 kB"
+      "react": 640047,
+      "reactGz": 144251,
+      "reactMin": 135334,
+      "reactMinGz": 39290,
+      "reactDom": 1170,
+      "reactDomMin": 706
     },
     {
       "version": "0.14.1",
-      "size": "640.97 kB",
-      "sizeGzipped": "145.07 kB",
-      "minified": "135.48 kB",
-      "minifiedGzipped": "39.48 kB"
+      "react": 640971,
+      "reactGz": 144450,
+      "reactMin": 135480,
+      "reactMinGz": 39336,
+      "reactDom": 1170,
+      "reactDomMin": 706
     },
     {
       "version": "0.14.2",
-      "size": "641.23 kB",
-      "sizeGzipped": "145.13 kB",
-      "minified": "135.54 kB",
-      "minifiedGzipped": "39.52 kB"
+      "react": 641226,
+      "reactGz": 144515,
+      "reactMin": 135543,
+      "reactMinGz": 39367,
+      "reactDom": 1170,
+      "reactDomMin": 706
     },
     {
       "version": "0.14.3",
-      "size": "641.37 kB",
-      "sizeGzipped": "145.16 kB",
-      "minified": "135.62 kB",
-      "minifiedGzipped": "39.54 kB"
+      "react": 641366,
+      "reactGz": 144540,
+      "reactMin": 135618,
+      "reactMinGz": 39387,
+      "reactDom": 1170,
+      "reactDomMin": 706
     },
     {
       "version": "0.14.4",
-      "size": "641.36 kB",
-      "sizeGzipped": "145.14 kB",
-      "minified": "135.53 kB",
-      "minifiedGzipped": "39.52 kB"
+      "react": 641356,
+      "reactGz": 144517,
+      "reactMin": 135528,
+      "reactMinGz": 39367,
+      "reactDom": 1170,
+      "reactDomMin": 706
     },
     {
       "version": "0.14.5",
-      "size": "641.36 kB",
-      "sizeGzipped": "145.14 kB",
-      "minified": "135.53 kB",
-      "minifiedGzipped": "39.52 kB"
+      "react": 641356,
+      "reactGz": 144517,
+      "reactMin": 135528,
+      "reactMinGz": 39367,
+      "reactDom": 1170,
+      "reactDomMin": 706
     },
     {
       "version": "0.14.6",
-      "size": "641.48 kB",
-      "sizeGzipped": "145.17 kB",
-      "minified": "135.57 kB",
-      "minifiedGzipped": "39.53 kB"
+      "react": 641479,
+      "reactGz": 144554,
+      "reactMin": 135572,
+      "reactMinGz": 39377,
+      "reactDom": 1170,
+      "reactDomMin": 706
     },
     {
       "version": "0.14.7",
-      "size": "641.55 kB",
-      "sizeGzipped": "145.20 kB",
-      "minified": "135.58 kB",
-      "minifiedGzipped": "39.54 kB"
+      "react": 641547,
+      "reactGz": 144586,
+      "reactMin": 135581,
+      "reactMinGz": 39389,
+      "reactDom": 1171,
+      "reactDomMin": 706
     },
     {
       "version": "0.14.8",
-      "size": "641.67 kB",
-      "sizeGzipped": "145.24 kB",
-      "minified": "135.65 kB",
-      "minifiedGzipped": "39.54 kB"
-    },
-    {
-      "version": "0.15.0-alpha.1",
-      "size": "633.92 kB",
-      "sizeGzipped": "143.10 kB",
-      "minified": "137.88 kB",
-      "minifiedGzipped": "40.13 kB"
+      "react": 641672,
+      "reactGz": 144623,
+      "reactMin": 135647,
+      "reactMinGz": 39384,
+      "reactDom": 1171,
+      "reactDomMin": 706
     },
     {
       "version": "15.0.0",
-      "size": "655.61 kB",
-      "sizeGzipped": "149.16 kB",
-      "minified": "145.41 kB",
-      "minifiedGzipped": "42.83 kB"
-    },
-    {
-      "version": "15.0.0-rc.1",
-      "size": "652.01 kB",
-      "sizeGzipped": "147.02 kB",
-      "minified": "142.26 kB",
-      "minifiedGzipped": "41.16 kB"
-    },
-    {
-      "version": "15.0.0-rc.2",
-      "size": "653.74 kB",
-      "sizeGzipped": "148.46 kB",
-      "minified": "145.04 kB",
-      "minifiedGzipped": "42.68 kB"
+      "react": 655607,
+      "reactGz": 148523,
+      "reactMin": 145410,
+      "reactMinGz": 42657,
+      "reactDom": 1174,
+      "reactDomMin": 709
     },
     {
       "version": "15.0.1",
-      "size": "656.69 kB",
-      "sizeGzipped": "149.44 kB",
-      "minified": "145.69 kB",
-      "minifiedGzipped": "42.91 kB"
+      "react": 656686,
+      "reactGz": 148818,
+      "reactMin": 145685,
+      "reactMinGz": 42735,
+      "reactDom": 1174,
+      "reactDomMin": 709
     }
   ]
 }

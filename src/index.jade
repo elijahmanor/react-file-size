@@ -1,3 +1,25 @@
+- // https://github.com/sindresorhus/pretty-bytes
+- var prettyBytes = function( num ) {
+-   var exponent;
+-   var unit;
+-   var neg = num < 0;
+-   var units = ['B', 'kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
+-
+-   if (neg) {
+-   	num = -num;
+-   }
+-
+-   if (num < 1) {
+-   	return (neg ? '-' : '') + num + ' B';
+-   }
+-
+-   exponent = Math.min(Math.floor(Math.log(num) / Math.log(1000)), units.length - 1);
+-   num = Number((num / Math.pow(1000, exponent)).toFixed(2));
+-   unit = units[exponent];
+-
+-   return (neg ? '-' : '') + num + ' ' + unit;
+- }
+
 doctype
 html.no-js
 	head
@@ -29,17 +51,17 @@ html.no-js
 					tr
 						th version
 						th react.js
-						th react.js.gz
 						th react.min.js
-						th react.min.js.gz
+						th react-dom.js
+						th react-dom.min.js
 				tbody
-					each version, i in versions
+					each version, i in combined
 						tr
 							td #{version.version}
-							td #{version.size}
-							td #{version.sizeGzipped}
-							td #{version.minified}
-							td #{version.minifiedGzipped}
+							td #{prettyBytes( version.react )}
+							td #{prettyBytes( version.reactMin )}
+							td #{version.reactDom ? prettyBytes( version.reactDom ) : "-"}
+							td #{version.reactDomMin ? prettyBytes( version.reactDomMin ) : "-"}
 		hr
 		div(id="linechart_material")
 		script(src='//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.6.1/lodash.min.js')

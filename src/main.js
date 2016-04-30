@@ -1,13 +1,13 @@
 import shell from "shelljs";
 import fs from "fs";
 import logUpdate from "log-update";
+import _ from "lodash";
+import gzipSize from "gzip-size";
+import prettyBytes from "pretty-bytes";
 
 const VERSIONS = [
 	"15.0.1",
-	"15.0.0-rc.2",
-	"15.0.0-rc.1",
 	"15.0.0",
-	"0.15.0-alpha.1",
 	"0.14.8",
 	"0.14.7",
 	"0.14.6",
@@ -16,35 +16,18 @@ const VERSIONS = [
 	"0.14.3",
 	"0.14.2",
 	"0.14.1",
-	"0.14.0-rc1",
-	"0.14.0-beta3",
-	"0.14.0-beta2",
-	"0.14.0-beta1",
-	"0.14.0-alpha3",
-	"0.14.0-alpha2",
-	"0.14.0-alpha1",
 	"0.14.0",
 	"0.13.3",
 	"0.13.2",
 	"0.13.1",
-	"0.13.0-rc2",
-	"0.13.0-rc1",
-	"0.13.0-beta.2",
-	"0.13.0-beta.1",
-	"0.13.0-alpha.2",
-	"0.13.0-alpha.1",
 	"0.13.0",
 	"0.12.2",
 	"0.12.1",
-	"0.12.0-rc1",
 	"0.12.0",
 	"0.11.2",
 	"0.11.1",
-	"0.11.0-rc1",
 	"0.11.0",
-	"0.10.0-rc1",
 	"0.10.0",
-	"0.9.0-rc1",
 	"0.9.0",
 	"0.8.0",
 	"0.7.1",
@@ -68,37 +51,68 @@ const VERSIONS = [
 shell.exec( "mkdir vendor", { silent: true } );
 
 const DATA = {
-	versions: []
+	react: {
+		versions: []
+	},
+	"react-dom": {
+		versions: []
+	}
 };
 
 VERSIONS.reverse();
-VERSIONS.forEach( ( version, index ) => {
-	const gzippedRegex = /Original size: (.+)\nCompressed size: (.+)/;
-	if ( !fileExists( `vendor/react-${ version }.js` ) ) {
-		shell.exec( `curl https://cdnjs.cloudflare.com/ajax/libs/react/${ version }/react.js --output vendor/react-${ version }.js` );
-	}
-	const reactGzipped = shell.exec( `gzipped vendor/react-${ version }.js`, { silent: true } ).output;
-	if ( !fileExists( `vendor/react-${ version }.min.js` ) ) {
-		shell.exec( `curl https://cdnjs.cloudflare.com/ajax/libs/react/${ version }/react.min.js --output vendor/react-${ version }.min.js` );
-	}
-	const reactMinifiedGzipped = shell.exec( `gzipped vendor/react-${ version }.min.js`, { silent: true } ).output;
-	const [ , size, sizeGzipped ] = gzippedRegex.exec( reactGzipped ); // jscs:ignore
-	const [ , minified, minifiedGzipped ] = gzippedRegex.exec( reactMinifiedGzipped ); // jscs:ignore
 
-	DATA.versions.push( {
-		version,
-		size,
-		sizeGzipped,
-		minified,
-		minifiedGzipped
-	} );
-
-	logUpdate( `Progress... ${ ( ( ( index + 1 ) / VERSIONS.length ) * 100 ).toFixed( 1 ) }% - v${version}` ); // eslint-disable-line no-magic-numbers
+DATA.react.versions = getStatistics( "react", VERSIONS );
+DATA[ "react-dom" ].versions = getStatistics( "react-dom", VERSIONS.filter( version => {
+	const semver = version.split( "." );
+	return semver[ 0 ] > 0 || semver[ 1 ] >= 14;
+} ) );
+DATA.combined = _.clone( DATA.react.versions );
+DATA.combined = DATA.combined.map( item => {
+	const dom = _.find( DATA[ "react-dom" ].versions, { version: item.version } );
+	return {
+		version: item.version,
+		react: item.size,
+		reactGz: item.sizeGzipped,
+		reactMin: item.minified,
+		reactMinGz: item.minifiedGzipped,
+		reactDom: dom ? dom.size : 0,
+		reactDomMin: dom ? dom.minified : 0
+	};
 } );
 
 fs.writeFileSync( "data.json", JSON.stringify( DATA, null, 2 ), "utf8" );
 
 logUpdate.done();
+
+function getStatistics( name, versions ) {
+	return versions.reduce( ( memo, version ) => {
+		logUpdate( `Progress... ${ name }-${ version }` );
+
+		const regex = /Original size: (.+)\nCompressed size: (.+)/;
+
+		if ( !fileExists( `vendor/${ name }-${ version }.js` ) ) {
+			shell.exec( `curl https://cdnjs.cloudflare.com/ajax/libs/react/${ version }/${ name }.js --output vendor/${ name }-${ version }.js` );
+		}
+		const size = fs.statSync( `vendor/${ name }-${ version }.js` ).size;
+		const sizeGzipped = parseInt( shell.exec( `gzip-size vendor/${ name }-${ version }.js`, { silent: true } ).output );
+
+		if ( !fileExists( `vendor/${ name }-${ version }.min.js` ) ) {
+			shell.exec( `curl https://cdnjs.cloudflare.com/ajax/libs/react/${ version }/${ name }.min.js --output vendor/${ name }-${ version }.min.js` );
+		}
+		const minified = fs.statSync( `vendor/${ name }-${ version }.min.js` ).size;
+		const minifiedGzipped = parseInt( shell.exec( `gzip-size vendor/${ name }-${ version }.min.js`, { silent: true } ).output );
+
+		memo.push( {
+			version,
+			size,
+			sizeGzipped,
+			minified,
+			minifiedGzipped
+		} );
+
+		return memo;
+	}, [] );
+}
 
 function fileExists( path ) {
 	try {
