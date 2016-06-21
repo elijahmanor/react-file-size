@@ -2,10 +2,10 @@ import shell from "shelljs";
 import fs from "fs";
 import logUpdate from "log-update";
 import _ from "lodash";
-import gzipSize from "gzip-size";
-import prettyBytes from "pretty-bytes";
 
 const VERSIONS = [
+	"15.1.0",
+	"15.0.2",
 	"15.0.1",
 	"15.0.0",
 	"0.14.8",
@@ -64,7 +64,7 @@ VERSIONS.reverse();
 DATA.react.versions = getStatistics( "react", VERSIONS );
 DATA[ "react-dom" ].versions = getStatistics( "react-dom", VERSIONS.filter( version => {
 	const semver = version.split( "." );
-	return semver[ 0 ] > 0 || semver[ 1 ] >= 14;
+	return semver[ 0 ] > 0 || semver[ 1 ] >= 14; // eslint-disable-line
 } ) );
 DATA.combined = _.clone( DATA.react.versions );
 DATA.combined = DATA.combined.map( item => {
@@ -88,19 +88,17 @@ function getStatistics( name, versions ) {
 	return versions.reduce( ( memo, version ) => {
 		logUpdate( `Progress... ${ name }-${ version }` );
 
-		const regex = /Original size: (.+)\nCompressed size: (.+)/;
-
 		if ( !fileExists( `vendor/${ name }-${ version }.js` ) ) {
 			shell.exec( `curl https://cdnjs.cloudflare.com/ajax/libs/react/${ version }/${ name }.js --output vendor/${ name }-${ version }.js` );
 		}
 		const size = fs.statSync( `vendor/${ name }-${ version }.js` ).size;
-		const sizeGzipped = parseInt( shell.exec( `gzip-size vendor/${ name }-${ version }.js`, { silent: true } ).output );
+		const sizeGzipped = parseInt( shell.exec( `gzip-size vendor/${ name }-${ version }.js`, { silent: true } ).output, 10 );
 
 		if ( !fileExists( `vendor/${ name }-${ version }.min.js` ) ) {
 			shell.exec( `curl https://cdnjs.cloudflare.com/ajax/libs/react/${ version }/${ name }.min.js --output vendor/${ name }-${ version }.min.js` );
 		}
 		const minified = fs.statSync( `vendor/${ name }-${ version }.min.js` ).size;
-		const minifiedGzipped = parseInt( shell.exec( `gzip-size vendor/${ name }-${ version }.min.js`, { silent: true } ).output );
+		const minifiedGzipped = parseInt( shell.exec( `gzip-size vendor/${ name }-${ version }.min.js`, { silent: true } ).output, 10 );
 
 		memo.push( {
 			version,

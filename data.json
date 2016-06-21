@@ -4,282 +4,296 @@
       {
         "version": "0.3.0",
         "size": 271893,
-        "sizeGzipped": 60254,
+        "sizeGzipped": null,
         "minified": 62213,
-        "minifiedGzipped": 18060
+        "minifiedGzipped": null
       },
       {
         "version": "0.3.1",
         "size": 271893,
-        "sizeGzipped": 60296,
+        "sizeGzipped": null,
         "minified": 62213,
-        "minifiedGzipped": 18060
+        "minifiedGzipped": null
       },
       {
         "version": "0.3.2",
         "size": 271893,
-        "sizeGzipped": 60296,
+        "sizeGzipped": null,
         "minified": 62213,
-        "minifiedGzipped": 18063
+        "minifiedGzipped": null
       },
       {
         "version": "0.3.3",
         "size": 272097,
-        "sizeGzipped": 60335,
+        "sizeGzipped": null,
         "minified": 62311,
-        "minifiedGzipped": 18089
+        "minifiedGzipped": null
       },
       {
         "version": "0.4.0",
         "size": 355743,
-        "sizeGzipped": 75106,
+        "sizeGzipped": null,
         "minified": 76815,
-        "minifiedGzipped": 21677
+        "minifiedGzipped": null
       },
       {
         "version": "0.4.1",
         "size": 360142,
-        "sizeGzipped": 75468,
+        "sizeGzipped": null,
         "minified": 77547,
-        "minifiedGzipped": 21811
+        "minifiedGzipped": null
       },
       {
         "version": "0.4.2",
         "size": 359939,
-        "sizeGzipped": 75411,
+        "sizeGzipped": null,
         "minified": 77355,
-        "minifiedGzipped": 21758
+        "minifiedGzipped": null
       },
       {
         "version": "0.5.0",
         "size": 443624,
-        "sizeGzipped": 92061,
+        "sizeGzipped": null,
         "minified": 92797,
-        "minifiedGzipped": 25969
+        "minifiedGzipped": null
       },
       {
         "version": "0.5.1",
         "size": 444062,
-        "sizeGzipped": 92157,
+        "sizeGzipped": null,
         "minified": 92974,
-        "minifiedGzipped": 26024
+        "minifiedGzipped": null
       },
       {
         "version": "0.5.2",
         "size": 444084,
-        "sizeGzipped": 92160,
+        "sizeGzipped": null,
         "minified": 92977,
-        "minifiedGzipped": 26025
+        "minifiedGzipped": null
       },
       {
         "version": "0.6.0",
         "size": 105852,
-        "sizeGzipped": 25736,
+        "sizeGzipped": null,
         "minified": 41933,
-        "minifiedGzipped": 12284
+        "minifiedGzipped": null
       },
       {
         "version": "0.6.1",
         "size": 97834,
-        "sizeGzipped": 23606,
+        "sizeGzipped": null,
         "minified": 38708,
-        "minifiedGzipped": 10937
+        "minifiedGzipped": null
       },
       {
         "version": "0.6.2",
         "size": 97909,
-        "sizeGzipped": 23515,
+        "sizeGzipped": null,
         "minified": 39894,
-        "minifiedGzipped": 11600
+        "minifiedGzipped": null
       },
       {
         "version": "0.6.3",
         "size": 98472,
-        "sizeGzipped": 23586,
+        "sizeGzipped": null,
         "minified": 40298,
-        "minifiedGzipped": 11666
+        "minifiedGzipped": null
       },
       {
         "version": "0.7.0",
         "size": 99322,
-        "sizeGzipped": 23744,
+        "sizeGzipped": null,
         "minified": 40760,
-        "minifiedGzipped": 11784
+        "minifiedGzipped": null
       },
       {
         "version": "0.7.1",
         "size": 99322,
-        "sizeGzipped": 23744,
+        "sizeGzipped": null,
         "minified": 40760,
-        "minifiedGzipped": 11784
+        "minifiedGzipped": null
       },
       {
         "version": "0.8.0",
         "size": 458736,
-        "sizeGzipped": 94042,
+        "sizeGzipped": null,
         "minified": 94460,
-        "minifiedGzipped": 26490
+        "minifiedGzipped": null
       },
       {
         "version": "0.9.0",
         "size": 528848,
-        "sizeGzipped": 107630,
+        "sizeGzipped": null,
         "minified": 108607,
-        "minifiedGzipped": 30241
+        "minifiedGzipped": null
       },
       {
         "version": "0.10.0",
         "size": 549985,
-        "sizeGzipped": 111616,
+        "sizeGzipped": null,
         "minified": 112351,
-        "minifiedGzipped": 30949
+        "minifiedGzipped": null
       },
       {
         "version": "0.11.0",
         "size": 592869,
-        "sizeGzipped": 121266,
+        "sizeGzipped": null,
         "minified": 126275,
-        "minifiedGzipped": 34576
+        "minifiedGzipped": null
       },
       {
         "version": "0.11.1",
         "size": 593628,
-        "sizeGzipped": 121514,
+        "sizeGzipped": null,
         "minified": 126354,
-        "minifiedGzipped": 34596
+        "minifiedGzipped": null
       },
       {
         "version": "0.11.2",
         "size": 594461,
-        "sizeGzipped": 121723,
+        "sizeGzipped": null,
         "minified": 126490,
-        "minifiedGzipped": 34643
+        "minifiedGzipped": null
       },
       {
         "version": "0.12.0",
         "size": 570900,
-        "sizeGzipped": 125763,
+        "sizeGzipped": null,
         "minified": 130289,
-        "minifiedGzipped": 35776
+        "minifiedGzipped": null
       },
       {
         "version": "0.12.1",
         "size": 571026,
-        "sizeGzipped": 125848,
+        "sizeGzipped": null,
         "minified": 130289,
-        "minifiedGzipped": 35776
+        "minifiedGzipped": null
       },
       {
         "version": "0.12.2",
         "size": 571784,
-        "sizeGzipped": 126053,
+        "sizeGzipped": null,
         "minified": 130436,
-        "minifiedGzipped": 35818
+        "minifiedGzipped": null
       },
       {
         "version": "0.13.0",
         "size": 598400,
-        "sizeGzipped": 134009,
+        "sizeGzipped": null,
         "minified": 120732,
-        "minifiedGzipped": 35907
+        "minifiedGzipped": null
       },
       {
         "version": "0.13.1",
         "size": 598504,
-        "sizeGzipped": 134030,
+        "sizeGzipped": null,
         "minified": 120797,
-        "minifiedGzipped": 35923
+        "minifiedGzipped": null
       },
       {
         "version": "0.13.2",
         "size": 599376,
-        "sizeGzipped": 134165,
+        "sizeGzipped": null,
         "minified": 121458,
-        "minifiedGzipped": 35941
+        "minifiedGzipped": null
       },
       {
         "version": "0.13.3",
         "size": 600572,
-        "sizeGzipped": 134488,
+        "sizeGzipped": null,
         "minified": 121738,
-        "minifiedGzipped": 36037
+        "minifiedGzipped": null
       },
       {
         "version": "0.14.0",
         "size": 640047,
-        "sizeGzipped": 144251,
+        "sizeGzipped": null,
         "minified": 135334,
-        "minifiedGzipped": 39290
+        "minifiedGzipped": null
       },
       {
         "version": "0.14.1",
         "size": 640971,
-        "sizeGzipped": 144450,
+        "sizeGzipped": null,
         "minified": 135480,
-        "minifiedGzipped": 39336
+        "minifiedGzipped": null
       },
       {
         "version": "0.14.2",
         "size": 641226,
-        "sizeGzipped": 144515,
+        "sizeGzipped": null,
         "minified": 135543,
-        "minifiedGzipped": 39367
+        "minifiedGzipped": null
       },
       {
         "version": "0.14.3",
         "size": 641366,
-        "sizeGzipped": 144540,
+        "sizeGzipped": null,
         "minified": 135618,
-        "minifiedGzipped": 39387
+        "minifiedGzipped": null
       },
       {
         "version": "0.14.4",
         "size": 641356,
-        "sizeGzipped": 144517,
+        "sizeGzipped": null,
         "minified": 135528,
-        "minifiedGzipped": 39367
+        "minifiedGzipped": null
       },
       {
         "version": "0.14.5",
         "size": 641356,
-        "sizeGzipped": 144517,
+        "sizeGzipped": null,
         "minified": 135528,
-        "minifiedGzipped": 39367
+        "minifiedGzipped": null
       },
       {
         "version": "0.14.6",
         "size": 641479,
-        "sizeGzipped": 144554,
+        "sizeGzipped": null,
         "minified": 135572,
-        "minifiedGzipped": 39377
+        "minifiedGzipped": null
       },
       {
         "version": "0.14.7",
         "size": 641547,
-        "sizeGzipped": 144586,
+        "sizeGzipped": null,
         "minified": 135581,
-        "minifiedGzipped": 39389
+        "minifiedGzipped": null
       },
       {
         "version": "0.14.8",
         "size": 641672,
-        "sizeGzipped": 144623,
+        "sizeGzipped": null,
         "minified": 135647,
-        "minifiedGzipped": 39384
+        "minifiedGzipped": null
       },
       {
         "version": "15.0.0",
         "size": 655607,
-        "sizeGzipped": 148523,
+        "sizeGzipped": null,
         "minified": 145410,
-        "minifiedGzipped": 42657
+        "minifiedGzipped": null
       },
       {
         "version": "15.0.1",
         "size": 656686,
-        "sizeGzipped": 148818,
+        "sizeGzipped": null,
         "minified": 145685,
-        "minifiedGzipped": 42735
+        "minifiedGzipped": null
+      },
+      {
+        "version": "15.0.2",
+        "size": 659291,
+        "sizeGzipped": null,
+        "minified": 146648,
+        "minifiedGzipped": null
+      },
+      {
+        "version": "15.1.0",
+        "size": 668793,
+        "sizeGzipped": null,
+        "minified": 147112,
+        "minifiedGzipped": null
       }
     ]
   },
@@ -288,79 +302,93 @@
       {
         "version": "0.14.0",
         "size": 1170,
-        "sizeGzipped": 627,
+        "sizeGzipped": null,
         "minified": 706,
-        "minifiedGzipped": 431
+        "minifiedGzipped": null
       },
       {
         "version": "0.14.1",
         "size": 1170,
-        "sizeGzipped": 627,
+        "sizeGzipped": null,
         "minified": 706,
-        "minifiedGzipped": 431
+        "minifiedGzipped": null
       },
       {
         "version": "0.14.2",
         "size": 1170,
-        "sizeGzipped": 628,
+        "sizeGzipped": null,
         "minified": 706,
-        "minifiedGzipped": 431
+        "minifiedGzipped": null
       },
       {
         "version": "0.14.3",
         "size": 1170,
-        "sizeGzipped": 627,
+        "sizeGzipped": null,
         "minified": 706,
-        "minifiedGzipped": 431
+        "minifiedGzipped": null
       },
       {
         "version": "0.14.4",
         "size": 1170,
-        "sizeGzipped": 627,
+        "sizeGzipped": null,
         "minified": 706,
-        "minifiedGzipped": 431
+        "minifiedGzipped": null
       },
       {
         "version": "0.14.5",
         "size": 1170,
-        "sizeGzipped": 627,
+        "sizeGzipped": null,
         "minified": 706,
-        "minifiedGzipped": 431
+        "minifiedGzipped": null
       },
       {
         "version": "0.14.6",
         "size": 1170,
-        "sizeGzipped": 627,
+        "sizeGzipped": null,
         "minified": 706,
-        "minifiedGzipped": 432
+        "minifiedGzipped": null
       },
       {
         "version": "0.14.7",
         "size": 1171,
-        "sizeGzipped": 627,
+        "sizeGzipped": null,
         "minified": 706,
-        "minifiedGzipped": 432
+        "minifiedGzipped": null
       },
       {
         "version": "0.14.8",
         "size": 1171,
-        "sizeGzipped": 627,
+        "sizeGzipped": null,
         "minified": 706,
-        "minifiedGzipped": 432
+        "minifiedGzipped": null
       },
       {
         "version": "15.0.0",
         "size": 1174,
-        "sizeGzipped": 628,
+        "sizeGzipped": null,
         "minified": 709,
-        "minifiedGzipped": 432
+        "minifiedGzipped": null
       },
       {
         "version": "15.0.1",
         "size": 1174,
-        "sizeGzipped": 628,
+        "sizeGzipped": null,
         "minified": 709,
-        "minifiedGzipped": 432
+        "minifiedGzipped": null
+      },
+      {
+        "version": "15.0.2",
+        "size": 1174,
+        "sizeGzipped": null,
+        "minified": 709,
+        "minifiedGzipped": null
+      },
+      {
+        "version": "15.1.0",
+        "size": 1174,
+        "sizeGzipped": null,
+        "minified": 709,
+        "minifiedGzipped": null
       }
     ]
   },
@@ -368,360 +396,378 @@
     {
       "version": "0.3.0",
       "react": 271893,
-      "reactGz": 60254,
+      "reactGz": null,
       "reactMin": 62213,
-      "reactMinGz": 18060,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.3.1",
       "react": 271893,
-      "reactGz": 60296,
+      "reactGz": null,
       "reactMin": 62213,
-      "reactMinGz": 18060,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.3.2",
       "react": 271893,
-      "reactGz": 60296,
+      "reactGz": null,
       "reactMin": 62213,
-      "reactMinGz": 18063,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.3.3",
       "react": 272097,
-      "reactGz": 60335,
+      "reactGz": null,
       "reactMin": 62311,
-      "reactMinGz": 18089,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.4.0",
       "react": 355743,
-      "reactGz": 75106,
+      "reactGz": null,
       "reactMin": 76815,
-      "reactMinGz": 21677,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.4.1",
       "react": 360142,
-      "reactGz": 75468,
+      "reactGz": null,
       "reactMin": 77547,
-      "reactMinGz": 21811,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.4.2",
       "react": 359939,
-      "reactGz": 75411,
+      "reactGz": null,
       "reactMin": 77355,
-      "reactMinGz": 21758,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.5.0",
       "react": 443624,
-      "reactGz": 92061,
+      "reactGz": null,
       "reactMin": 92797,
-      "reactMinGz": 25969,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.5.1",
       "react": 444062,
-      "reactGz": 92157,
+      "reactGz": null,
       "reactMin": 92974,
-      "reactMinGz": 26024,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.5.2",
       "react": 444084,
-      "reactGz": 92160,
+      "reactGz": null,
       "reactMin": 92977,
-      "reactMinGz": 26025,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.6.0",
       "react": 105852,
-      "reactGz": 25736,
+      "reactGz": null,
       "reactMin": 41933,
-      "reactMinGz": 12284,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.6.1",
       "react": 97834,
-      "reactGz": 23606,
+      "reactGz": null,
       "reactMin": 38708,
-      "reactMinGz": 10937,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.6.2",
       "react": 97909,
-      "reactGz": 23515,
+      "reactGz": null,
       "reactMin": 39894,
-      "reactMinGz": 11600,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.6.3",
       "react": 98472,
-      "reactGz": 23586,
+      "reactGz": null,
       "reactMin": 40298,
-      "reactMinGz": 11666,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.7.0",
       "react": 99322,
-      "reactGz": 23744,
+      "reactGz": null,
       "reactMin": 40760,
-      "reactMinGz": 11784,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.7.1",
       "react": 99322,
-      "reactGz": 23744,
+      "reactGz": null,
       "reactMin": 40760,
-      "reactMinGz": 11784,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.8.0",
       "react": 458736,
-      "reactGz": 94042,
+      "reactGz": null,
       "reactMin": 94460,
-      "reactMinGz": 26490,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.9.0",
       "react": 528848,
-      "reactGz": 107630,
+      "reactGz": null,
       "reactMin": 108607,
-      "reactMinGz": 30241,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.10.0",
       "react": 549985,
-      "reactGz": 111616,
+      "reactGz": null,
       "reactMin": 112351,
-      "reactMinGz": 30949,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.11.0",
       "react": 592869,
-      "reactGz": 121266,
+      "reactGz": null,
       "reactMin": 126275,
-      "reactMinGz": 34576,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.11.1",
       "react": 593628,
-      "reactGz": 121514,
+      "reactGz": null,
       "reactMin": 126354,
-      "reactMinGz": 34596,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.11.2",
       "react": 594461,
-      "reactGz": 121723,
+      "reactGz": null,
       "reactMin": 126490,
-      "reactMinGz": 34643,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.12.0",
       "react": 570900,
-      "reactGz": 125763,
+      "reactGz": null,
       "reactMin": 130289,
-      "reactMinGz": 35776,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.12.1",
       "react": 571026,
-      "reactGz": 125848,
+      "reactGz": null,
       "reactMin": 130289,
-      "reactMinGz": 35776,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.12.2",
       "react": 571784,
-      "reactGz": 126053,
+      "reactGz": null,
       "reactMin": 130436,
-      "reactMinGz": 35818,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.13.0",
       "react": 598400,
-      "reactGz": 134009,
+      "reactGz": null,
       "reactMin": 120732,
-      "reactMinGz": 35907,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.13.1",
       "react": 598504,
-      "reactGz": 134030,
+      "reactGz": null,
       "reactMin": 120797,
-      "reactMinGz": 35923,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.13.2",
       "react": 599376,
-      "reactGz": 134165,
+      "reactGz": null,
       "reactMin": 121458,
-      "reactMinGz": 35941,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.13.3",
       "react": 600572,
-      "reactGz": 134488,
+      "reactGz": null,
       "reactMin": 121738,
-      "reactMinGz": 36037,
+      "reactMinGz": null,
       "reactDom": 0,
       "reactDomMin": 0
     },
     {
       "version": "0.14.0",
       "react": 640047,
-      "reactGz": 144251,
+      "reactGz": null,
       "reactMin": 135334,
-      "reactMinGz": 39290,
+      "reactMinGz": null,
       "reactDom": 1170,
       "reactDomMin": 706
     },
     {
       "version": "0.14.1",
       "react": 640971,
-      "reactGz": 144450,
+      "reactGz": null,
       "reactMin": 135480,
-      "reactMinGz": 39336,
+      "reactMinGz": null,
       "reactDom": 1170,
       "reactDomMin": 706
     },
     {
       "version": "0.14.2",
       "react": 641226,
-      "reactGz": 144515,
+      "reactGz": null,
       "reactMin": 135543,
-      "reactMinGz": 39367,
+      "reactMinGz": null,
       "reactDom": 1170,
       "reactDomMin": 706
     },
     {
       "version": "0.14.3",
       "react": 641366,
-      "reactGz": 144540,
+      "reactGz": null,
       "reactMin": 135618,
-      "reactMinGz": 39387,
+      "reactMinGz": null,
       "reactDom": 1170,
       "reactDomMin": 706
     },
     {
       "version": "0.14.4",
       "react": 641356,
-      "reactGz": 144517,
+      "reactGz": null,
       "reactMin": 135528,
-      "reactMinGz": 39367,
+      "reactMinGz": null,
       "reactDom": 1170,
       "reactDomMin": 706
     },
     {
       "version": "0.14.5",
       "react": 641356,
-      "reactGz": 144517,
+      "reactGz": null,
       "reactMin": 135528,
-      "reactMinGz": 39367,
+      "reactMinGz": null,
       "reactDom": 1170,
       "reactDomMin": 706
     },
     {
       "version": "0.14.6",
       "react": 641479,
-      "reactGz": 144554,
+      "reactGz": null,
       "reactMin": 135572,
-      "reactMinGz": 39377,
+      "reactMinGz": null,
       "reactDom": 1170,
       "reactDomMin": 706
     },
     {
       "version": "0.14.7",
       "react": 641547,
-      "reactGz": 144586,
+      "reactGz": null,
       "reactMin": 135581,
-      "reactMinGz": 39389,
+      "reactMinGz": null,
       "reactDom": 1171,
       "reactDomMin": 706
     },
     {
       "version": "0.14.8",
       "react": 641672,
-      "reactGz": 144623,
+      "reactGz": null,
       "reactMin": 135647,
-      "reactMinGz": 39384,
+      "reactMinGz": null,
       "reactDom": 1171,
       "reactDomMin": 706
     },
     {
       "version": "15.0.0",
       "react": 655607,
-      "reactGz": 148523,
+      "reactGz": null,
       "reactMin": 145410,
-      "reactMinGz": 42657,
+      "reactMinGz": null,
       "reactDom": 1174,
       "reactDomMin": 709
     },
     {
       "version": "15.0.1",
       "react": 656686,
-      "reactGz": 148818,
+      "reactGz": null,
       "reactMin": 145685,
-      "reactMinGz": 42735,
+      "reactMinGz": null,
+      "reactDom": 1174,
+      "reactDomMin": 709
+    },
+    {
+      "version": "15.0.2",
+      "react": 659291,
+      "reactGz": null,
+      "reactMin": 146648,
+      "reactMinGz": null,
+      "reactDom": 1174,
+      "reactDomMin": 709
+    },
+    {
+      "version": "15.1.0",
+      "react": 668793,
+      "reactGz": null,
+      "reactMin": 147112,
+      "reactMinGz": null,
       "reactDom": 1174,
       "reactDomMin": 709
     }
