@@ -3913,6 +3913,12 @@ punycode@^1.4.1:
   version "1.4.1"
   resolved "https://puppet.leankit.com:4873/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
 
+push-dir@^0.2.2:
+  version "0.2.2"
+  resolved "https://puppet.leankit.com:4873/push-dir/-/push-dir-0.2.2.tgz#adfe73b54c2f821be1e7915a648e39b3aea9e7e7"
+  dependencies:
+    minimist "^1.2.0"
+
 q@^1.1.2:
   version "1.4.1"
   resolved "https://puppet.leankit.com:4873/q/-/q-1.4.1.tgz#55705bcd93c5f3673530c2c2cbc0c2b3addc286e"

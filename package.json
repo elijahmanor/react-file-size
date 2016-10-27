@@ -21,8 +21,7 @@
     "uglify": "npm run uglify:js && npm run uglify:css",
     "uglify:js": "uglifyjs public/index.js -o public/index.min.js",
     "uglify:css": "node-sass src/index.scss public/index.min.css --output-style=compressed",
-    "gh-pages": "git subtree push --prefix public origin gh-pages",
-    "gh-pages:force": "git push origin `git subtree split --prefix public master`:gh-pages --force"
+    "gh-pages": "push-dir --dir=build --branch=gh-pages"
   },
   "nyc": {
     "include": [
@@ -84,6 +83,7 @@
     "onchange": "^2.0.0",
     "parallelshell": "^2.0.0",
     "proxyquire": "^1.7.10",
+    "push-dir": "^0.2.2",
     "sinon": "^1.17.6",
     "sinon-chai": "^2.8.0",
     "uglify-js": "^2.6.2"
