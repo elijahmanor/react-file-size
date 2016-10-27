@@ -657,3 +657,8 @@ function drawChart() {
 window.addEventListener( "resize", _.throttle( function() {
 	drawChart();
 }, 250 ) );
+
+document.querySelector( "tbody tr:last-child").addEventListener( "mouseenter", function() {
+	var tbody = document.querySelector( "tbody" );
+	tbody.scrollTop = tbody.scrollHeight;
+} );

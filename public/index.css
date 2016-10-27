@@ -380,7 +380,7 @@ body {
 
 .table--fixed tbody {
   overflow-y: auto;
-  height: 500px; }
+  height: 300px; }
 
 .table--fixed tbody td, .table--fixed thead th {
   float: left;
