@@ -22,7 +22,8 @@
     "uglify:js": "uglifyjs public/index.js -o public/index.min.js",
     "uglify:css": "node-sass src/index.scss public/index.min.css --output-style=compressed",
     "gh-pages": "git subtree push --prefix public origin gh-pages",
-    "gh-pages:force": "git push origin `git subtree split --prefix public master`:gh-pages --force"
+    "gh-pages:force": "git push origin `git subtree split --prefix public master`:gh-pages --force",
+    "gh-pages:refresh": "git push origin :gh-pages && git subtree push --prefix public origin gh-pages"
   },
   "nyc": {
     "include": [
