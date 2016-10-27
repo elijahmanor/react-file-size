@@ -1,0 +1,39 @@
+@import "../node_modules/normalize.scss/normalize.scss";
+
+html {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+body {
+	margin: 2rem;
+}
+
+.GithubButtons {
+	display: flex;
+	justify-content: flex-end;
+	iframe, a { margin-right: 1rem; }
+	iframe:last-child { margin-right: 0; }
+}
+
+.table th,
+.table td {
+	text-align: right;
+	width: 20%;
+
+	span { display: none; }
+	i { display: none; }
+}
+
+i.increase { color: green; }
+i.decrease { color: red; }
+
+.table tr:hover {
+	span { display: inline; }
+	i { display: block; }
+}
+
+.table th:first-child,
+.table td:first-child {
+	text-align: left;
+}

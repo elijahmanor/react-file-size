@@ -1,0 +1,9 @@
+{
+  "parser": "babel-eslint",
+  "extends": [ "leankit", "leankit/es6" ],
+  "rules": {
+    "complexity": [ 1, 5 ],
+    "no-negated-condition": 1,
+    "no-param-reassign": [ 0, { "props": false } ]
+  }
+}
