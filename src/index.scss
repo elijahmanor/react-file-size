@@ -16,6 +16,39 @@ body {
 	iframe:last-child { margin-right: 0; }
 }
 
+.table {
+
+}
+
+.table--fixed {
+  thead, tbody, tr {
+    display: block;
+    width: 100%;
+  }
+
+  tr {
+    overflow: hidden;
+  }
+
+  tbody {
+    overflow-y: auto;
+    height: 500px;
+  }
+
+  tbody td, thead th {
+    float: left;
+    border-bottom-width: 0;
+    &:after {
+      visibility: hidden;
+      display: block;
+      font-size: 0;
+      content: " ";
+      clear: both;
+      height: 0;
+    }
+  }
+}
+
 .table th,
 .table td {
 	text-align: right;
