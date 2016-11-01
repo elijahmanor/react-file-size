@@ -6,6 +6,10 @@
   "bin": {
     "react-file-size": "./index.js"
   },
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha spec/ --require babel-register"
+  },
   "author": "Elijah Manor",
   "license": "MIT",
   "publishConfig": {
