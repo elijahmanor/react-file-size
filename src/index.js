@@ -16,7 +16,7 @@ export function getAllStats( versions, spinner ) {
 	return Promise.all( [
 		getStatistics( "react", versions, spinner ),
 		getStatistics( "react-dom", versions, spinner )
-	] )
+	] );
 }
 
 export function mapStats( versions, reactStats, reactDomStats ) {
@@ -61,6 +61,6 @@ export function bootstrap() {
 		spinner.text = `Houston, we have a problem: ${ error.message }`;
 		spinner.fail();
 	} );
-};
+}
 
 bootstrap();

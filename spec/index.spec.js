@@ -6,7 +6,7 @@ import dirtyChai from "dirty-chai";
 import { isPromise } from "./helpers";
 import { merge } from "lodash";
 
-const should = chai.should();
+const should = chai.should(); // eslint-disable-line no-unused-vars
 chai.use( sinonChai );
 chai.use( dirtyChai );
 
@@ -146,8 +146,8 @@ describe( "Index", () => {
 		it( "should default to zero bytes if size is undefined", () => {
 			const versions = [ "1.0.0", "2.0.0" ];
 			const reactStats = [
-				{ name: "react.js", version: "1.0.0"  },
-				{ name: "react.js", version: "2.0.0" },
+				{ name: "react.js", version: "1.0.0" },
+				{ name: "react.js", version: "2.0.0" }
 			];
 			const reactDomStats = [
 			];
