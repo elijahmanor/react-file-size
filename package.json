@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "test": "mocha spec/ --require babel-register",
+    "test": "npm run eslint && npm run stylelint && mocha spec/ --require babel-register",
     "eslint": "eslint --cache --fix ./",
     "stylelint": "stylelint '**/*.scss' --syntax scss",
     "stylelint:fix": "stylefmt -R src/"
