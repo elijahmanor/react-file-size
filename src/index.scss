@@ -1,8 +1,8 @@
 @import "../node_modules/normalize.scss/normalize.scss";
 
 html {
-  max-width: 800px;
-  margin: 0 auto;
+	max-width: 800px;
+	margin: 0 auto;
 }
 
 body {
@@ -12,41 +12,48 @@ body {
 .GithubButtons {
 	display: flex;
 	justify-content: flex-end;
-	iframe, a { margin-right: 1rem; }
-	iframe:last-child { margin-right: 0; }
-}
 
-.table {
+	iframe,
+	a {
+		margin-right: 1rem;
+	}
 
+	iframe:last-child {
+		margin-right: 0;
+	}
 }
 
 .table--fixed {
-  thead, tbody, tr {
-    display: block;
-    width: 100%;
-  }
+	thead,
+	tbody,
+	tr {
+		display: block;
+		width: 100%;
+	}
 
-  tr {
-    overflow: hidden;
-  }
+	tr {
+		overflow: hidden;
+	}
 
-  tbody {
-    overflow-y: auto;
-    height: 300px;
-  }
+	tbody {
+		overflow-y: auto;
+		height: 300px;
+	}
 
-  tbody td, thead th {
-    float: left;
-    border-bottom-width: 0;
-    &:after {
-      visibility: hidden;
-      display: block;
-      font-size: 0;
-      content: " ";
-      clear: both;
-      height: 0;
-    }
-  }
+	tbody td,
+	thead th {
+		float: left;
+		border-bottom-width: 0;
+
+		&:after {
+			visibility: hidden;
+			display: block;
+			font-size: 0;
+			content: " ";
+			clear: both;
+			height: 0;
+		}
+	}
 }
 
 .table th,
@@ -54,16 +61,31 @@ body {
 	text-align: right;
 	width: 20%;
 
-	span { display: none; }
-	i { display: none; }
+	span {
+		display: none;
+	}
+
+	i {
+		display: none;
+	}
 }
 
-i.increase { color: green; }
-i.decrease { color: red; }
+i.increase {
+	color: #3c763d;
+}
+
+i.decrease {
+	color: #a94442;
+}
 
 .table tr:hover {
-	span { display: inline; }
-	i { display: block; }
+	span {
+		display: inline;
+	}
+
+	i {
+		display: block;
+	}
 }
 
 .table th:first-child,
