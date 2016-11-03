@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "mocha spec/ --require babel-register",
-    "eslint": "eslint ./"
+    "eslint": "eslint --cache --fix ./"
   },
   "author": "Elijah Manor",
   "license": "MIT",
