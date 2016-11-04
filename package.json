@@ -8,7 +8,9 @@
   },
   "scripts": {
     "start": "node index.js",
-    "test": "npm run lint && mocha spec/ --require babel-register",
+    "pretest": "npm run lint",
+    "test": "mocha spec/ --require babel-register",
+    "posttest": "",
     "lint": "npm-run-all lint:**",
     "lint:js": "eslint --cache --fix ./",
     "lint:css": "stylelint '**/*.scss' --syntax scss",
