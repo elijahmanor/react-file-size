@@ -8,7 +8,9 @@
   },
   "scripts": {
     "start": "node index.js",
-    "test": "npm run eslint & npm run stylelint & mocha spec/ --require babel-register & wait",
+    "test": "npm-run-all eslint stylelint && mocha spec/ --require babel-register",
+    "mocha": "mocha spec/ --require babel-register",
+    "test:p": "npm-run-all --parallel eslint stylelint mocha",
     "eslint": "eslint --cache --fix ./",
     "stylelint": "stylelint '**/*.scss' --syntax scss",
     "stylelint:fix": "stylefmt -R src/"
@@ -55,6 +57,7 @@
     "mocha": "^3.1.0",
     "mustache": "^2.2.1",
     "node-sass": "^3.6.0",
+    "npm-run-all": "^3.1.1",
     "nyc": "^8.3.2",
     "onchange": "^2.0.0",
     "parallelshell": "^2.0.0",
