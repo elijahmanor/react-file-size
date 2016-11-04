@@ -8,12 +8,11 @@
   },
   "scripts": {
     "start": "node index.js",
-    "test": "npm-run-all eslint stylelint && mocha spec/ --require babel-register",
-    "mocha": "mocha spec/ --require babel-register",
-    "test:p": "npm-run-all --parallel eslint stylelint mocha",
-    "eslint": "eslint --cache --fix ./",
-    "stylelint": "stylelint '**/*.scss' --syntax scss",
-    "stylelint:fix": "stylefmt -R src/"
+    "test": "npm run lint && mocha spec/ --require babel-register",
+    "lint": "npm-run-all lint:**",
+    "lint:js": "eslint --cache --fix ./",
+    "lint:css": "stylelint '**/*.scss' --syntax scss",
+    "lint:css:fix": "stylefmt -R src/"
   },
   "author": "Elijah Manor",
   "license": "MIT",
