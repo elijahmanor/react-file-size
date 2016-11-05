@@ -16,7 +16,8 @@
     "lint": "npm-run-all lint:**",
     "lint:js": "eslint --cache --fix ./",
     "lint:css": "stylelint '**/*.scss' --syntax scss",
-    "lint:css:fix": "stylefmt -R src/"
+    "lint:css:fix": "stylefmt -R src/",
+    "watch:test": "npm t -- --watch",
   },
    "nyc": {
     "include": [
