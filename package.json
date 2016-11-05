@@ -34,7 +34,6 @@
     "server": "npm-run-all --parallel server:*",
     "server:create": "http-server public/$npm_package_version -p $npm_package_config_port",
     "server:launch": "open http://localhost:$npm_package_config_port",
-    "precommit": "npm run lint"
   },
   "nyc": {
     "include": [
@@ -86,7 +85,6 @@
     "eslint": "^3.9.1",
     "eslint-config-leankit": "^3.0.0",
     "gzipped": "0.0.5",
-    "husky": "^0.11.9",
     "jade": "^1.11.0",
     "jest": "^16.0.2",
     "jscs": "^3.0.7",
