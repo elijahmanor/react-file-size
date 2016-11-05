@@ -2,3 +2,5 @@ vendor/
 node_modules/
 data.json
 .nyc_output/
+coverage/
+.eslintcache
