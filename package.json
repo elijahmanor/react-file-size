@@ -2,12 +2,18 @@
   "name": "react-file-size",
   "version": "1.0.0",
   "description": "Show file size changes over versions of React",
+  "author": "Elijah Manor",
+  "license": "MIT",
   "main": "index.js",
   "bin": {
     "react-file-size": "./index.js"
   },
+  "config": {
+    "port": "1337"
+  },
   "scripts": {
     "start": "node index.js",
+    "poststart": "npm run build && npm run server",
     "pretest": "npm run lint",
     "test": "mocha spec/ --require babel-register",
     "cover": "nyc npm t",
@@ -23,8 +29,11 @@
     "build": "npm-run-all build:*",
     "prebuild": "rm -rf public/$npm_package_version",
     "build:html": "jade --obj data.json src/index.jade --out public/$npm_package_version/",
-    "build:css": "node-sass src/index.scss | postcss --use autoprefixer --autoprefixer.browsers '> 5%' | cssmin > public/$npm_package_version/index.css",
-    "build:js": "mustache data.json src/index.mustache.js | uglifyjs > public/$npm_package_version/index.js"
+    "build:css": "node-sass src/index.scss | postcss --use autoprefixer --autoprefixer.browsers '> 5%' | cssmin > public/$npm_package_version/index.min.css",
+    "build:js": "mustache data.json src/index.mustache.js | uglifyjs > public/$npm_package_version/index.min.js",
+    "server": "npm-run-all --parallel server:*",
+    "server:create": "http-server public/$npm_package_version -p $npm_package_config_port",
+    "server:launch": "open http://localhost:$npm_package_config_port"
   },
   "nyc": {
     "include": [
@@ -40,8 +49,6 @@
       "html"
     ]
   },
-  "author": "Elijah Manor",
-  "license": "MIT",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
