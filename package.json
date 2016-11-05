@@ -17,7 +17,12 @@
     "lint:js": "eslint --cache --fix ./",
     "lint:css": "stylelint '**/*.scss' --syntax scss",
     "lint:css:fix": "stylefmt -R src/",
-    "watch:test": "npm t -- --watch"
+    "watch:test": "npm t -- --watch",
+    "build": "npm-run-all build:*",
+    "build:clean": "rm -rf public/",
+    "build:html": "jade --obj data.json src/index.jade --out public/",
+    "build:css": "node-sass src/index.scss | postcss --use autoprefixer --autoprefixer.browsers '> 5%' | cssmin > public/index.css",
+    "build:js": "mustache data.json src/index.mustache.js | uglifyjs > public/index.js"
   },
   "nyc": {
     "include": [
@@ -60,11 +65,13 @@
     "when": "^3.7.7"
   },
   "devDependencies": {
+    "autoprefixer": "^6.5.1",
     "babel-eslint": "^5.0.0-beta6",
     "babel-jest": "^15.0.0",
     "babel-polyfill": "^6.13.0",
     "babel-register": "^6.16.3",
     "chai": "^3.5.0",
+    "cssmin": "^0.4.3",
     "dirty-chai": "^1.2.2",
     "eslint": "^1.10.3",
     "eslint-config-leankit": "^1.1.0",
@@ -79,6 +86,7 @@
     "nyc": "^8.3.2",
     "onchange": "^2.0.0",
     "parallelshell": "^2.0.0",
+    "postcss-cli": "^2.6.0",
     "proxyquire": "^1.7.10",
     "push-dir": "^0.2.2",
     "sinon": "^1.17.6",
