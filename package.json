@@ -18,7 +18,7 @@
     "lint:css": "stylelint '**/*.scss' --syntax scss",
     "lint:css:fix": "stylefmt -R src/"
   },
-   "nyc": {
+  "nyc": {
     "include": [
       "src/**/*.js"
     ],
