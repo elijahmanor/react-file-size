@@ -38,7 +38,8 @@ export function mapStats( versions, reactStats, reactDomStats ) {
 }
 
 export function writeFile( path, data ) {
-	fs.writeFileSync( path, JSON.stringify( data, null, 2 ), "utf8" );
+	const NUMBER_OF_SPACES_TO_INDENT = 2;
+	fs.writeFileSync( path, JSON.stringify( data, null, NUMBER_OF_SPACES_TO_INDENT ), "utf8" );
 }
 
 export function bootstrap() {
