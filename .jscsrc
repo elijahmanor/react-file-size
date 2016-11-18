@@ -1,6 +1,4 @@
-
 {
-	"esnext": true,
 	"disallowKeywords": [
 		"with"
 	],
