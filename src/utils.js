@@ -5,7 +5,10 @@ import gzipSize from "gzip-size";
 import when from "when";
 
 export function scrapeVersions( $ ) {
-	return $( ".version-selector option" ).get().map( el => el.attribs.value ).reverse();
+	return $( ".version-selector option" )
+		.get().map( el => el.attribs.value )
+		.filter( el => !~el.indexOf( "-" ) )
+		.reverse();
 }
 
 export function getVersions( uri ) {
