@@ -5,3 +5,4 @@ data.json
 public/
 spec/mocha.js
 src/index.mustache.js
+coverage/
