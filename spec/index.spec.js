@@ -6,7 +6,6 @@ import dirtyChai from "dirty-chai";
 import { isPromise } from "./helpers";
 import { merge } from "lodash";
 
-const should = chai.should();
 chai.use( sinonChai );
 chai.use( dirtyChai );
 
@@ -147,7 +146,7 @@ describe( "Index", () => {
 			const versions = [ "1.0.0", "2.0.0" ];
 			const reactStats = [
 				{ name: "react.js", version: "1.0.0" },
-				{ name: "react.js", version: "2.0.0" },
+				{ name: "react.js", version: "2.0.0" }
 			];
 			const reactDomStats = [
 			];
