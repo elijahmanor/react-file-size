@@ -9,7 +9,8 @@
   "scripts": {
     "start": "node index.js",
     "test": "mocha spec/ --require babel-register",
-    "eslint": "eslint --cache --fix ./"
+    "eslint": "eslint --cache --fix ./",
+    "stylelint": "stylelint '**/*.scss' --syntax scss"
   },
   "author": "Elijah Manor",
   "license": "MIT",
@@ -60,6 +61,7 @@
     "push-dir": "^0.2.2",
     "sinon": "^1.17.6",
     "sinon-chai": "^2.8.0",
+    "stylelint": "^7.5.0",
     "uglify-js": "^2.6.2"
   }
 }
