@@ -1,1 +1,8 @@
-node_modules/*
+vendor/
+node_modules/
+data.json
+.nyc_output/
+public/
+spec/mocha.js
+src/index.mustache.js
+coverage/
