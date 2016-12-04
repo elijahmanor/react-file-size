@@ -7,8 +7,7 @@
     "start": "node index.js",
     "test": "npm run eslint & npm run stylelint & mocha spec/ --require babel-register & wait",
     "eslint": "eslint --cache --fix ./",
-    "stylelint": "stylelint '**/*.scss' --syntax scss",
-    "stylelint:fix": "stylefmt -R src/"
+    "stylelint": "stylelint '**/*.scss' --syntax scss"
   },
   "bin": {
     "react-file-size": "./index.js"
