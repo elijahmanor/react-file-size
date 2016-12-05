@@ -6,9 +6,9 @@
   "scripts": {
     "start": "node index.js",
     "test": "npm run eslint && npm run stylelint && npm run mocha",
-    "mocha": "mocha spec/ --require babel-register",
     "eslint": "eslint --cache --fix ./",
-    "stylelint": "stylelint '**/*.scss' --syntax scss"
+    "stylelint": "stylelint '**/*.scss' --syntax scss",
+    "mocha": "mocha spec/ --require babel-register"
   },
   "bin": {
     "react-file-size": "./index.js"
@@ -55,6 +55,7 @@
     "mocha": "^3.1.0",
     "mustache": "^2.2.1",
     "node-sass": "^3.6.0",
+    "npm-run-all": "^3.1.2",
     "nyc": "^8.3.2",
     "onchange": "^2.0.0",
     "parallelshell": "^2.0.0",
