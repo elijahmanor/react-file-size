@@ -5,12 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "npm-run-all eslint stylelint && mocha spec/ --require babel-register",
-    "mocha": "mocha spec/ --require babel-register",
-    "test:p": "npm-run-all --parallel eslint stylelint mocha",
+    "test": "npm-run-all eslint stylelint mocha",
     "eslint": "eslint --cache --fix ./",
     "stylelint": "stylelint '**/*.scss' --syntax scss",
-    "stylelint:fix": "stylefmt -R src/"
+    "mocha": "mocha spec/ --require babel-register"
   },
   "bin": {
     "react-file-size": "./index.js"
