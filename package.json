@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "description": "Show file size changes over versions of React",
   "main": "index.js",
-  "bin": {
-    "react-file-size": "./index.js"
-  },
   "scripts": {
     "start": "node index.js",
     "test": "npm-run-all eslint stylelint && mocha spec/ --require babel-register",
     "mocha": "mocha spec/ --require babel-register",
     "eslint": "eslint --cache --fix ./",
     "stylelint": "stylelint '**/*.scss' --syntax scss"
+  },
+  "bin": {
+    "react-file-size": "./index.js"
   },
   "author": "Elijah Manor",
   "license": "MIT",
