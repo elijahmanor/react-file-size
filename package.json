@@ -1,11 +1,8 @@
 {
   "name": "react-file-size",
-  "version": "1.0.0",
-  "description": "Show file size changes over versions of React",
+  "version": "0.1.0",
+  "description": "A tool to generate file size changes for the react library",
   "main": "index.js",
-  "bin": {
-    "react-file-size": "./index.js"
-  },
   "scripts": {
     "start": "node index.js",
     "test": "npm run lint && mocha spec/ --require babel-register",
@@ -13,6 +10,9 @@
     "lint:js": "eslint --cache --fix ./",
     "lint:css": "stylelint '**/*.scss' --syntax scss",
     "lint:css:fix": "stylefmt -R src/"
+  },
+  "bin": {
+    "react-file-size": "./index.js"
   },
   "author": "Elijah Manor",
   "license": "MIT",
