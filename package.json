@@ -22,8 +22,8 @@
     "watch:lint": "onchange 'src/**/*.js' 'src/**/*.scss' -- npm run lint",
     "build": "npm-run-all build:*",
     "build:clean": "rm -rf public/",
-    "build:html": "jade --obj data.json src/index.jade --out public/",
-    "build:css": "node-sass src/index.scss | postcss --use autoprefixer --autoprefixer.browsers '> 5%' | cssmin > public/index.css",
+    "build:html": "pug --obj data.json src/index.pug --out public/",
+    "build:css": "node-sass src/index.scss | postcss -c .postcssrc.json | cssmin > public/index.css",
     "build:js": "mustache data.json src/index.mustache.js | uglifyjs > public/index.js"
   },
   "nyc": {
@@ -78,7 +78,6 @@
     "eslint": "^3.9.1",
     "eslint-config-leankit": "^3.0.0",
     "gzipped": "0.0.5",
-    "jade": "^1.11.0",
     "jest": "^16.0.2",
     "jscs": "^3.0.7",
     "mocha": "^3.1.0",
@@ -91,6 +90,7 @@
     "postcss-cli": "^2.6.0",
     "proxyquire": "^1.7.10",
     "push-dir": "^0.2.2",
+    "pug-cli": "^1.0.0-alpha6",
     "sinon": "^1.17.6",
     "sinon-chai": "^2.8.0",
     "stylefmt": "^4.3.1",
