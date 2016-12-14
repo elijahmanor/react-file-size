@@ -1,6 +1,14 @@
 {
+<<<<<<< HEAD
     "use": ["autoprefixer" ],
     "autoprefixer": {
         "browsers": "> 5%"
     }
 }
+=======
+    "use": [ "autoprefixer" ],
+    "autoprefixer": {
+        "browsers": "> 5%"
+    }
+}
+>>>>>>> c39f021... Switch to pug
