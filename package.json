@@ -19,7 +19,7 @@
     "lint:css:fix": "stylefmt -R src/",
     "watch:test": "npm t -- --watch",
     "build": "npm-run-all build:*",
-    "build:clean": "rm -rf public/",
+    "prebuild": "rm -rf public/",
     "build:html": "pug --obj data.json src/index.pug --out public/",
     "build:css": "node-sass src/index.scss | postcss -c .postcssrc.json | cssmin > public/index.css",
     "build:js": "mustache data.json src/index.mustache.js | uglifyjs > public/index.js"
