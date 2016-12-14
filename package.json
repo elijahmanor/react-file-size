@@ -19,8 +19,8 @@
     "watch:lint": "onchange 'src/**/*.js' 'src/**/*.scss' -- npm run lint",
     "build": "npm-run-all build:*",
     "prebuild": "rm -rf public/$npm_package_version",
-    "build:html": "jade --obj data.json src/index.jade --out public/$npm_package_version/",
-    "build:css": "node-sass src/index.scss | postcss --use autoprefixer --autoprefixer.browsers '> 5%' | cssmin > public/$npm_package_version/index.css",
+    "build:html": "pug --obj data.json src/index.pug --out public/$npm_package_version/",
+    "build:css": "node-sass src/index.scss | postcss -c .postcssrc.json | cssmin > public/$npm_package_version/index.css",
     "build:js": "mustache data.json src/index.mustache.js | uglifyjs > public/$npm_package_version/index.js"
   },
   "bin": {
@@ -64,9 +64,14 @@
     "eslint": "^3.9.1",
     "eslint-config-leankit": "^3.0.0",
     "gzipped": "0.0.5",
+<<<<<<< HEAD
     "jade": "^1.11.0",
     "jest": "^16.0.2",
     "jscs": "^3.0.7",
+=======
+    "jest": "^15.1.1",
+    "jscs": "^2.11.0",
+>>>>>>> c39f021... Switch to pug
     "mocha": "^3.1.0",
     "mustache": "^2.2.1",
     "node-sass": "^3.11.2",
@@ -77,6 +82,7 @@
     "postcss-cli": "^2.6.0",
     "proxyquire": "^1.7.10",
     "push-dir": "^0.2.2",
+    "pug-cli": "^1.0.0-alpha6",
     "sinon": "^1.17.6",
     "sinon-chai": "^2.8.0",
     "stylefmt": "^4.3.1",
