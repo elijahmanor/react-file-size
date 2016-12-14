@@ -29,8 +29,7 @@ mixin tableData(data, prev)
 			span bytes<br/>(#{prettyBytes( data )})
 			i(class="#{ change > 0	 ? 'decrease' : 'increase'}") Δ #{ sign }#{ prettyBytes(Math.abs(change)) }
 	else
-		td
-			&ndash;
+		td &ndash;
 
 doctype
 html.no-js
@@ -48,7 +47,7 @@ html.no-js
 			a(href="https://twitter.com/elijahmanor" class="twitter-follow-button" data-show-count="false") Follow @elijahmanor
 			iframe(src="https://ghbtns.com/github-btn.html?user=elijahmanor&repo=react-file-size&type=star" frameborder="0" scrolling="0" width="51px" height="20px")
 			iframe(src="https://ghbtns.com/github-btn.html?user=elijahmanor&repo=react-file-size&type=fork" frameborder="0" scrolling="0" width="53px" height="20px")
-		script
+		script.
 			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 		h1 React File Size
 		p
