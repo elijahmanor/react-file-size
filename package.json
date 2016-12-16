@@ -29,7 +29,7 @@
     "server": "npm-run-all --parallel server:*",
     "server:create": "http-server public/$npm_package_version -p $npm_package_config_port",
     "server:launch": "open http://localhost:$npm_package_config_port",
-    "precommit": "npm run lint"
+    "prepush": "npm run lint"
   },
   "bin": {
     "react-file-size": "./index.js"
