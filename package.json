@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "precommit": "npm run lint",
+    "prepush": "npm run lint",
     "poststart": "npm run build && npm run server",
     "pretest": "npm run lint",
     "test": "mocha spec/ --require babel-register",
