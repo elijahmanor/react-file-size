@@ -1,14 +1,8 @@
-import chai from "chai";
 import sinon from "sinon";
-import sinonChai from "sinon-chai";
 import proxyquire from "proxyquire";
-import dirtyChai from "dirty-chai";
 import { isPromise } from "./helpers";
 import { merge } from "lodash";
-
-const should = chai.should(); // eslint-disable-line no-unused-vars
-chai.use( sinonChai );
-chai.use( dirtyChai );
+import assert from "power-assert";
 
 const defaults = {
 	fs: {
@@ -55,7 +49,7 @@ describe( "Index", () => {
 
 		it( "should create a vendor folder", () => {
 			createFolder( "vendor" );
-			stubs.shelljs.exec.should.have.been.calledWith( "mkdir vendor" );
+			assert( stubs.shelljs.exec.calledWith( "mkdir vendor" ) );
 		} );
 	} );
 
@@ -69,12 +63,13 @@ describe( "Index", () => {
 
 		it( "should return a promise", () => {
 			const promise = getAllReactVersions();
-			isPromise( promise ).should.be.true();
+			assert( isPromise( promise ) );
 		} );
 
 		it( "should call getVersions with a cdnjs url to react", () => {
 			getAllReactVersions();
-			stubs[ "./utils" ].getVersions.should.have.been.calledWith( "https://cdnjs.com/libraries/react" );
+			const getVersions = stubs[ "./utils" ].getVersions;
+			assert( getVersions.calledWith( "https://cdnjs.com/libraries/react" ) );
 		} );
 	} );
 
@@ -88,13 +83,14 @@ describe( "Index", () => {
 
 		it( "should return a promise", () => {
 			const promise = getAllStats();
-			isPromise( promise ).should.be.true();
+			assert( isPromise( promise ) );
 		} );
 
 		it( "should call getStatistics for react and react-dom", () => {
 			getAllStats();
-			stubs[ "./utils" ].getStatistics.should.have.been.calledWith( "react" );
-			stubs[ "./utils" ].getStatistics.should.have.been.calledWith( "react-dom" );
+			const getStatistics = stubs[ "./utils" ].getStatistics;
+			assert( getStatistics.calledWith( "react" ) );
+			assert( getStatistics.calledWith( "react-dom" ) );
 		} );
 	} );
 
@@ -121,7 +117,7 @@ describe( "Index", () => {
 				{ name: "react-dom.min.js", version: "2.0.0", size: 23, sizeGzipped: 20 }
 			];
 			const stats = mapStats( versions, reactStats, reactDomStats );
-			stats.should.eql( [
+			assert.deepEqual( stats, [
 				{
 					version: "1.0.0",
 					react: 123,
@@ -152,7 +148,7 @@ describe( "Index", () => {
 			const reactDomStats = [
 			];
 			const stats = mapStats( versions, reactStats, reactDomStats );
-			stats.should.eql( [
+			assert.deepEqual( stats, [
 				{
 					version: "1.0.0",
 					react: 0,
@@ -185,9 +181,10 @@ describe( "Index", () => {
 
 		it( "should write out formatted JSON", () => {
 			writeFile( "~/tmp/hello.txt", { hello: "world" } );
-			stubs.fs.writeFileSync.should.have.been.calledWith( "~/tmp/hello.txt", `{
+			const writeFileSync = stubs.fs.writeFileSync;
+			assert( writeFileSync.calledWith( "~/tmp/hello.txt", `{
   "hello": "world"
-}`, "utf8" );
+}`, "utf8" ) );
 		} );
 	} );
 
@@ -201,12 +198,12 @@ describe( "Index", () => {
 
 		it( "should have started ora status", () => {
 			bootstrap();
-			stubs.ora().start.should.have.been.called();
+			assert( stubs.ora().start.called );
 		} );
 
 		it( "should have succeed ora status after getAllStatus", () => {
 			bootstrap();
-			stubs.ora().succeed.should.have.been.called();
+			assert( stubs.ora().succeed.called );
 		} );
 
 		it( "should fail when getAllStats is rejected", () => {
@@ -217,7 +214,7 @@ describe( "Index", () => {
 			} );
 			bootstrap = proxyquire( "../src/index.js", stubs ).bootstrap;
 			bootstrap().then( () => {
-				stubs.ora().fail.should.have.been.called();
+				assert( stubs.ora().fail.called );
 			} );
 		} );
 
@@ -229,7 +226,7 @@ describe( "Index", () => {
 			} );
 			bootstrap = proxyquire( "../src/index.js", stubs ).bootstrap;
 			bootstrap().then( () => {
-				stubs.ora().fail.should.have.been.called();
+				assert( stubs.ora().fail.called );
 			} );
 		} );
 	} );

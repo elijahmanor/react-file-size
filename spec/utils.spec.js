@@ -1,14 +1,8 @@
-import chai from "chai";
 import sinon from "sinon";
-import sinonChai from "sinon-chai";
 import proxyquire from "proxyquire";
-import dirtyChai from "dirty-chai";
 import { isPromise } from "./helpers";
 import { merge } from "lodash";
-
-const should = chai.should();
-chai.use( sinonChai );
-chai.use( dirtyChai );
+import assert from "power-assert";
 
 const defaults = {
 	fs: {
@@ -49,7 +43,7 @@ describe( "Utils", () => {
 
 		it( "should grab all of the version options", () => {
 			scrapeVersions( stubs.$ );
-			stubs.$.should.have.been.calledWith( ".version-selector option" );
+			assert( stubs.$.calledWith( ".version-selector option" ) );
 		} );
 	} );
 
@@ -66,7 +60,7 @@ describe( "Utils", () => {
 		it( "should make a request to the supplied url", () => {
 			getVersions( "http://elijahmanor.com" );
 			const firstCall = stubs[ "request-promise" ].getCall( 0 );
-			firstCall.args[ 0 ].uri.should.equal( "http://elijahmanor.com" );
+			assert( firstCall.args[ 0 ].uri === "http://elijahmanor.com" );
 		} );
 
 		it( "should parse the body content with cheerio", () => {
@@ -77,13 +71,13 @@ describe( "Utils", () => {
 			} );
 			getVersions = proxyquire( "../src/utils.js", stubs ).getVersions;
 			return getVersions( "http://elijahmanor.com" ).then( () => {
-				stubs.cheerio.load.should.have.been.calledWith( "body" );
+				assert( stubs.cheerio.load.calledWith( "body" ) );
 			} );
 		} );
 
 		it( "should return a list of versions", () => {
 			return getVersions( "http://elijahmanor.com" ).then( versions => {
-				versions.should.eql( [ "3.0.0", "2.0.0", "1.0.0" ] );
+				assert.deepEqual( versions, [ "3.0.0", "2.0.0", "1.0.0" ] );
 			} );
 		} );
 	} );
@@ -98,12 +92,12 @@ describe( "Utils", () => {
 
 		it( "should check the file system for its stats", () => {
 			fileExists( "/tmp/fileName.txt" );
-			stubs.fs.statSync.should.have.been.calledWith( "/tmp/fileName.txt" );
+			assert( stubs.fs.statSync.calledWith( "/tmp/fileName.txt" ) );
 		} );
 
 		it( "should check to see if the path is a file", () => {
 			fileExists( "/tmp/fileName.txt" );
-			stubs.fs.isFile.should.have.been.called();
+			assert( stubs.fs.isFile.called );
 		} );
 
 		it( "should return false if throws an error", () => {
@@ -114,7 +108,7 @@ describe( "Utils", () => {
 			} );
 			fileExists = proxyquire( "../src/utils.js", stubs ).fileExists;
 			const exists = fileExists( "/tmp/fileName.txt" );
-			exists.should.equal( false );
+			assert( !exists );
 		} );
 	} );
 
@@ -128,12 +122,12 @@ describe( "Utils", () => {
 
 		it( "should return a promise", () => {
 			const promise = getFile( "name", "version", "path", "url", {} );
-			isPromise( promise ).should.be.true();
+			assert( isPromise( promise ) );
 		} );
 
 		it( "should read the file if it already exists", () => {
 			return getFile( "name", "version", "path", "url", {} ).then( file => {
-				stubs.fs.readFileSync.should.be.calledWith( "path" );
+				assert( stubs.fs.readFileSync.calledWith( "path" ) );
 			} );
 		} );
 
@@ -145,7 +139,7 @@ describe( "Utils", () => {
 			} );
 			getFile = proxyquire( "../src/utils.js", stubs ).getFile;
 			return getFile( "name", "version", "path", "url", {} ).then( file => {
-				stubs[ "request-promise" ].should.have.been.called();
+				assert( stubs[ "request-promise" ].called );
 			} );
 		} );
 
@@ -158,7 +152,7 @@ describe( "Utils", () => {
 			} );
 			getFile = proxyquire( "../src/utils.js", stubs ).getFile;
 			return getFile( "name", "version", "path", "url", {} ).then( file => {
-				should.not.exist( file.body );
+				assert( !file.body );
 			} );
 		} );
 	} );
@@ -173,14 +167,14 @@ describe( "Utils", () => {
 
 		it( "should return a promise", () => {
 			const promise = getStatistics( "name", "versions", {} );
-			isPromise( promise ).should.be.true();
+			assert( isPromise( promise ) );
 		} );
 
 		it( "should get normal and minified files", () => {
 			const versions = [ "1.0.0" ];
 			return getStatistics( "name", versions, {} ).then( stats => {
-				stats[ 0 ].name.should.equal( "name.js" );
-				stats[ 1 ].name.should.equal( "name.min.js" );
+				assert( stats[ 0 ].name === "name.js" );
+				assert( stats[ 1 ].name === "name.min.js" );
 			} );
 		} );
 
@@ -196,18 +190,18 @@ describe( "Utils", () => {
 			getStatistics = proxyquire( "../src/utils.js", stubs ).getStatistics;
 			const versions = [ "1.0.0" ];
 			return getStatistics( "name", versions, {} ).then( stats => {
-				stats[ 0 ].sizeGzipped.should.equal( 0 );
+				assert( stats[ 0 ].sizeGzipped === 0 );
 			} );
 		} );
 
 		it( "should get normal and minified files for each version provided", () => {
-			const versions = [ "2.0.0", "3.0.0" ];
+			const versions = [ "2x.0.0", "3.0.0" ];
 			return getStatistics( "name", versions, {} ).then( stats => {
-				stats.length.should.equal( 4 );
-				stats[ 0 ].path.should.equal( "vendor/name-2.0.0.js" );
-				stats[ 1 ].path.should.equal( "vendor/name-2.0.0.min.js" );
-				stats[ 2 ].path.should.equal( "vendor/name-3.0.0.js" );
-				stats[ 3 ].path.should.equal( "vendor/name-3.0.0.min.js" );
+				assert( stats.length === 4 );
+				assert( stats[ 0 ].path === "vendor/name-2.0.0.js" );
+				assert( stats[ 1 ].path === "vendor/name-2.0.0.min.js" );
+				assert( stats[ 2 ].path === "vendor/name-3.0.0.js" );
+				assert( stats[ 3 ].path === "vendor/name-3.0.0.min.js" );
 			} );
 		} );
 	} );
