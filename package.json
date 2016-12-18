@@ -73,6 +73,7 @@
     "eslint": "^3.9.1",
     "eslint-config-leankit": "^3.0.0",
     "gzipped": "0.0.5",
+    "http-server": "^0.9.0",
     "husky": "^0.11.9",
     "jest": "^16.0.2",
     "jscs": "^3.0.7",
