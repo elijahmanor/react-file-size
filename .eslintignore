@@ -6,3 +6,4 @@ public/
 spec/mocha.js
 src/index.mustache.js
 coverage/
+package-scripts.js
