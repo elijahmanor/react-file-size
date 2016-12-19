@@ -7,29 +7,10 @@
     "port": "1337"
   },
   "scripts": {
-    "start": "node index.js",
-    "poststart": "npm run build && npm run server",
-    "pretest": "npm run lint",
-    "test": "BABEL_ENV=test mocha spec/ --require babel-register",
-    "cover": "nyc npm t",
-    "postcover": "rm -rf .nyc_output",
-    "cover:open": "open coverage/index.html",
-    "lint": "npm-run-all lint:**",
-    "lint:js": "eslint --cache --fix ./",
-    "lint:css": "stylelint '**/*.scss' --syntax scss",
-    "lint:css:fix": "stylefmt -R src/",
-    "watch": "npm-run-all --parallel watch:*",
-    "watch:test": "npm t -- --watch",
-    "watch:lint": "onchange 'src/**/*.js' 'src/**/*.scss' -- npm run lint",
-    "build": "npm-run-all build:*",
-    "prebuild": "rm -rf public/$npm_package_version",
-    "build:html": "pug --obj data.json src/index.pug --out public/$npm_package_version/",
-    "build:css": "node-sass src/index.scss | postcss -c .postcssrc.json | cssmin > public/$npm_package_version/index.min.css",
-    "build:js": "mustache data.json src/index.mustache.js | uglifyjs > public/$npm_package_version/index.min.js",
-    "server": "npm-run-all --parallel server:*",
-    "server:create": "http-server public/$npm_package_version -p $npm_package_config_port",
-    "server:launch": "open http://localhost:$npm_package_config_port",
-    "prepush": "npm run lint"
+    "start": "nps",
+    "test": "nps test",
+    "help": "nps --help",
+    "prepush": "nps lint"
   },
   "bin": {
     "react-file-size": "./index.js"
