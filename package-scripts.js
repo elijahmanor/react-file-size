@@ -6,7 +6,7 @@ module.exports = {
 			script: 'nps lint,test.run',
 			description: 'Run our mocha unit tests'
 		},
-		run: 'BABEL_ENV=test mocha spec/ --require babel-register',
+		run: 'BABEL_ENV=test mocha spec/ --require babel-register'
 	},
     cover: {
       default: 'nyc npm t && nps cover.clean',
