@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "npm-run-all eslint stylelint && mocha spec/ --require babel-register",
+    "test": "npm-run-all eslint stylelint mocha",
     "mocha": "mocha spec/ --require babel-register",
     "eslint": "eslint --cache --fix ./",
     "stylelint": "stylelint '**/*.scss' --syntax scss"
