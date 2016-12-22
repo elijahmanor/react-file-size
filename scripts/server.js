@@ -5,5 +5,5 @@ const {
 	npm_package_config_port: port
 } = process.env;
 
+exec( `http-server public/${ version } -p ${ port }`, { async: true } );
 exec( `opn http://localhost:${ port }` );
-exec( `http-server public/${ version } -p ${ port }` );
