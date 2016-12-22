@@ -16,11 +16,11 @@
     "cover:open": "open coverage/index.html",
     "lint": "npm-run-all lint:**",
     "lint:js": "eslint --cache --fix ./",
-    "lint:css": "stylelint '**/*.scss' --syntax scss",
+    "lint:css": "stylelint \"**/*.scss\" --syntax scss",
     "lint:css:fix": "stylefmt -R src/",
     "watch": "npm-run-all --parallel watch:*",
     "watch:test": "npm t -- --watch",
-    "watch:lint": "onchange 'src/**/*.js' 'src/**/*.scss' -- npm run lint",
+    "watch:lint": "onchange \"src/**/*.js\" \"src/**/*.scss\" -- npm run lint",
     "build": "babel-node ./scripts/build.js",
     "server": "babel-node ./scripts/server.js",
     "prepush": "npm run lint"
