@@ -5,4 +5,4 @@ const environment = isWindows ?
 	"set BABEL_ENV=test&&" :
 	"BABEL_ENV=test";
 
-exec( `${ environment } BABEL_ENV=test mocha spec/ --require babel-register` );
+exec( `${ environment } mocha spec/ --require babel-register` );

@@ -195,7 +195,7 @@ describe( "Utils", () => {
 		} );
 
 		it( "should get normal and minified files for each version provided", () => {
-			const versions = [ "2.0.0", "3.0.0" ];
+			const versions = [ "2.9.0", "3.0.0" ];
 			return getStatistics( "name", versions, {} ).then( stats => {
 				assert( stats.length === 4 );
 				assert( stats[ 0 ].path === "vendor/name-2.0.0.js" );
