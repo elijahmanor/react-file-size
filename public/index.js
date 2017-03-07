@@ -431,6 +431,24 @@ var versions = [
 		"react-dom.js": "619047",
 		"react-dom.min.js": "123922",
 	},
+	{
+		version: "15.4.1",
+		"react.js": "127517",
+		"react.js.gz": "30368",
+		"react.min.js": "21339",
+		"react.min.js.gz": "7316",
+		"react-dom.js": "619308",
+		"react-dom.min.js": "123996",
+	},
+	{
+		version: "15.4.2",
+		"react.js": "127694",
+		"react.js.gz": "30461",
+		"react.min.js": "21203",
+		"react.min.js.gz": "7286",
+		"react-dom.js": "620424",
+		"react-dom.min.js": "123889",
+	},
 ];
 
 google.charts.load( 'current', { 'packages': [ 'line' ] } );
