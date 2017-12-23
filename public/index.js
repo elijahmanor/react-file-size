@@ -6,7 +6,9 @@ var versions = [
 		"react.min.js": "62213",
 		"react.min.js.gz": "18060",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.3.1",
@@ -15,7 +17,9 @@ var versions = [
 		"react.min.js": "62213",
 		"react.min.js.gz": "18060",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.3.2",
@@ -24,7 +28,9 @@ var versions = [
 		"react.min.js": "62213",
 		"react.min.js.gz": "18063",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.3.3",
@@ -33,7 +39,9 @@ var versions = [
 		"react.min.js": "62311",
 		"react.min.js.gz": "18089",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.4.0",
@@ -42,7 +50,9 @@ var versions = [
 		"react.min.js": "76815",
 		"react.min.js.gz": "21677",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.4.1",
@@ -51,7 +61,9 @@ var versions = [
 		"react.min.js": "77547",
 		"react.min.js.gz": "21811",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.4.2",
@@ -60,7 +72,9 @@ var versions = [
 		"react.min.js": "77355",
 		"react.min.js.gz": "21758",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.5.0",
@@ -69,7 +83,9 @@ var versions = [
 		"react.min.js": "92797",
 		"react.min.js.gz": "25969",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.5.1",
@@ -78,7 +94,9 @@ var versions = [
 		"react.min.js": "92974",
 		"react.min.js.gz": "26024",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.5.2",
@@ -87,7 +105,9 @@ var versions = [
 		"react.min.js": "92977",
 		"react.min.js.gz": "26025",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.6.0",
@@ -96,7 +116,9 @@ var versions = [
 		"react.min.js": "41933",
 		"react.min.js.gz": "12284",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.6.1",
@@ -105,7 +127,9 @@ var versions = [
 		"react.min.js": "38708",
 		"react.min.js.gz": "10937",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.6.2",
@@ -114,7 +138,9 @@ var versions = [
 		"react.min.js": "39894",
 		"react.min.js.gz": "11600",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.6.3",
@@ -123,7 +149,9 @@ var versions = [
 		"react.min.js": "40298",
 		"react.min.js.gz": "11666",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.7.0",
@@ -132,7 +160,9 @@ var versions = [
 		"react.min.js": "40760",
 		"react.min.js.gz": "11784",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.7.1",
@@ -141,7 +171,9 @@ var versions = [
 		"react.min.js": "40760",
 		"react.min.js.gz": "11784",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.8.0",
@@ -150,7 +182,9 @@ var versions = [
 		"react.min.js": "94460",
 		"react.min.js.gz": "26490",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.9.0",
@@ -159,7 +193,9 @@ var versions = [
 		"react.min.js": "108607",
 		"react.min.js.gz": "30241",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.10.0",
@@ -168,7 +204,9 @@ var versions = [
 		"react.min.js": "112351",
 		"react.min.js.gz": "30949",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.11.0",
@@ -177,7 +215,9 @@ var versions = [
 		"react.min.js": "126275",
 		"react.min.js.gz": "34576",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.11.1",
@@ -186,7 +226,9 @@ var versions = [
 		"react.min.js": "126354",
 		"react.min.js.gz": "34596",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.11.2",
@@ -195,7 +237,9 @@ var versions = [
 		"react.min.js": "126490",
 		"react.min.js.gz": "34643",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.12.0",
@@ -204,7 +248,9 @@ var versions = [
 		"react.min.js": "130289",
 		"react.min.js.gz": "35776",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.12.1",
@@ -213,7 +259,9 @@ var versions = [
 		"react.min.js": "130289",
 		"react.min.js.gz": "35776",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.12.2",
@@ -222,7 +270,9 @@ var versions = [
 		"react.min.js": "130436",
 		"react.min.js.gz": "35818",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.13.0",
@@ -231,7 +281,9 @@ var versions = [
 		"react.min.js": "120732",
 		"react.min.js.gz": "35907",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.13.1",
@@ -240,7 +292,9 @@ var versions = [
 		"react.min.js": "120797",
 		"react.min.js.gz": "35923",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.13.2",
@@ -249,7 +303,9 @@ var versions = [
 		"react.min.js": "121458",
 		"react.min.js.gz": "35941",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.13.3",
@@ -258,7 +314,9 @@ var versions = [
 		"react.min.js": "121738",
 		"react.min.js.gz": "36037",
 		"react-dom.js": "0",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "0",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.14.0",
@@ -267,7 +325,9 @@ var versions = [
 		"react.min.js": "135334",
 		"react.min.js.gz": "39290",
 		"react-dom.js": "1170",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "706",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.14.1",
@@ -276,7 +336,9 @@ var versions = [
 		"react.min.js": "135480",
 		"react.min.js.gz": "39336",
 		"react-dom.js": "1170",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "706",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.14.2",
@@ -285,7 +347,9 @@ var versions = [
 		"react.min.js": "135543",
 		"react.min.js.gz": "39367",
 		"react-dom.js": "1170",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "706",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.14.3",
@@ -294,7 +358,9 @@ var versions = [
 		"react.min.js": "135618",
 		"react.min.js.gz": "39387",
 		"react-dom.js": "1170",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "706",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.14.4",
@@ -303,7 +369,9 @@ var versions = [
 		"react.min.js": "135528",
 		"react.min.js.gz": "39367",
 		"react-dom.js": "1170",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "706",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.14.5",
@@ -312,7 +380,9 @@ var versions = [
 		"react.min.js": "135528",
 		"react.min.js.gz": "39367",
 		"react-dom.js": "1170",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "706",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.14.6",
@@ -321,7 +391,9 @@ var versions = [
 		"react.min.js": "135572",
 		"react.min.js.gz": "39377",
 		"react-dom.js": "1170",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "706",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.14.7",
@@ -330,7 +402,9 @@ var versions = [
 		"react.min.js": "135581",
 		"react.min.js.gz": "39389",
 		"react-dom.js": "1171",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "706",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.14.8",
@@ -339,7 +413,9 @@ var versions = [
 		"react.min.js": "135647",
 		"react.min.js.gz": "39384",
 		"react-dom.js": "1171",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "706",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "0.14.9",
@@ -348,7 +424,9 @@ var versions = [
 		"react.min.js": "135992",
 		"react.min.js.gz": "39425",
 		"react-dom.js": "1171",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "706",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "15.0.0",
@@ -357,7 +435,9 @@ var versions = [
 		"react.min.js": "145410",
 		"react.min.js.gz": "42657",
 		"react-dom.js": "1174",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "709",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "15.0.1",
@@ -366,7 +446,9 @@ var versions = [
 		"react.min.js": "145685",
 		"react.min.js.gz": "42735",
 		"react-dom.js": "1174",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "709",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "15.0.2",
@@ -375,7 +457,9 @@ var versions = [
 		"react.min.js": "146648",
 		"react.min.js.gz": "42998",
 		"react-dom.js": "1174",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "709",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "15.1.0",
@@ -384,7 +468,9 @@ var versions = [
 		"react.min.js": "147112",
 		"react.min.js.gz": "43212",
 		"react-dom.js": "1174",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "709",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "15.2.0",
@@ -393,7 +479,9 @@ var versions = [
 		"react.min.js": "153133",
 		"react.min.js.gz": "45270",
 		"react-dom.js": "1174",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "709",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "15.2.1",
@@ -402,7 +490,9 @@ var versions = [
 		"react.min.js": "147398",
 		"react.min.js.gz": "43578",
 		"react-dom.js": "1174",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "709",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "15.3.0",
@@ -411,7 +501,9 @@ var versions = [
 		"react.min.js": "148583",
 		"react.min.js.gz": "44048",
 		"react-dom.js": "1174",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "709",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "15.3.1",
@@ -420,7 +512,9 @@ var versions = [
 		"react.min.js": "148665",
 		"react.min.js.gz": "44143",
 		"react-dom.js": "1174",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "709",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "15.3.2",
@@ -429,7 +523,9 @@ var versions = [
 		"react.min.js": "148805",
 		"react.min.js.gz": "44186",
 		"react-dom.js": "1174",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "709",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "15.4.0",
@@ -438,7 +534,9 @@ var versions = [
 		"react.min.js": "21339",
 		"react.min.js.gz": "7316",
 		"react-dom.js": "619047",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "123922",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "15.4.1",
@@ -447,7 +545,9 @@ var versions = [
 		"react.min.js": "21339",
 		"react.min.js.gz": "7316",
 		"react-dom.js": "619308",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "123996",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "15.4.2",
@@ -456,7 +556,9 @@ var versions = [
 		"react.min.js": "21203",
 		"react.min.js.gz": "7286",
 		"react-dom.js": "620424",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "123889",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "15.5.0",
@@ -465,7 +567,42 @@ var versions = [
 		"react.min.js": "17488",
 		"react.min.js.gz": "6247",
 		"react-dom.js": "645755",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "124656",
+		"react-dom.min.js.gz": "",
+	},
+	{
+		version: "15.5.1",
+		"react.js": "136018",
+		"react.js.gz": "31415",
+		"react.min.js": "17488",
+		"react.min.js.gz": "6247",
+		"react-dom.js": "645755",
+		"react-dom.js.gz": "",
+		"react-dom.min.js": "124656",
+		"react-dom.min.js.gz": "",
+	},
+	{
+		version: "15.5.2",
+		"react.js": "136016",
+		"react.js.gz": "31413",
+		"react.min.js": "17488",
+		"react.min.js.gz": "6247",
+		"react-dom.js": "645753",
+		"react-dom.js.gz": "",
+		"react-dom.min.js": "124656",
+		"react-dom.min.js.gz": "",
+	},
+	{
+		version: "15.5.3",
+		"react.js": "136016",
+		"react.js.gz": "31413",
+		"react.min.js": "17488",
+		"react.min.js.gz": "6247",
+		"react-dom.js": "645753",
+		"react-dom.js.gz": "",
+		"react-dom.min.js": "124656",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "15.5.4",
@@ -474,7 +611,9 @@ var versions = [
 		"react.min.js": "21335",
 		"react.min.js.gz": "7328",
 		"react-dom.js": "646420",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "128505",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "15.6.0",
@@ -483,7 +622,9 @@ var versions = [
 		"react.min.js": "22631",
 		"react.min.js.gz": "7788",
 		"react-dom.js": "651537",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "129791",
+		"react-dom.min.js.gz": "",
 	},
 	{
 		version: "15.6.1",
@@ -492,37 +633,109 @@ var versions = [
 		"react.min.js": "23040",
 		"react.min.js.gz": "7915",
 		"react-dom.js": "653066",
+		"react-dom.js.gz": "",
 		"react-dom.min.js": "130293",
+		"react-dom.min.js.gz": "",
+	},
+	{
+		version: "15.6.2",
+		"react.js": "141859",
+		"react.js.gz": "34268",
+		"react.min.js": "22918",
+		"react.min.js.gz": "7862",
+		"react-dom.js": "636856",
+		"react-dom.js.gz": "",
+		"react-dom.min.js": "130312",
+		"react-dom.min.js.gz": "",
+	},
+	{
+		version: "16.0.0",
+		"react.js": "55295",
+		"react.js.gz": "14251",
+		"react.min.js": "5611",
+		"react.min.js.gz": "2364",
+		"react-dom.js": "606573",
+		"react-dom.js.gz": "",
+		"react-dom.min.js": "108200",
+		"react-dom.min.js.gz": "",
+	},
+	{
+		version: "16.1.0",
+		"react.js": "45166",
+		"react.js.gz": "12533",
+		"react.min.js": "5363",
+		"react.min.js.gz": "2304",
+		"react-dom.js": "547394",
+		"react-dom.js.gz": "",
+		"react-dom.min.js": "92733",
+		"react-dom.min.js.gz": "",
+	},
+	{
+		version: "16.1.1",
+		"react.js": "45220",
+		"react.js.gz": "12560",
+		"react.min.js": "5363",
+		"react.min.js.gz": "2304",
+		"react-dom.js": "548798",
+		"react-dom.js.gz": "",
+		"react-dom.min.js": "92803",
+		"react-dom.min.js.gz": "",
+	},
+	{
+		version: "16.2.0",
+		"react.js": "45158",
+		"react.js.gz": "12576",
+		"react.min.js": "5412",
+		"react.min.js.gz": "2389",
+		"react-dom.js": "549486",
+		"react-dom.js.gz": "",
+		"react-dom.min.js": "92699",
+		"react-dom.min.js.gz": "",
 	},
 ];
 
 google.charts.load( 'current', { 'packages': [ 'line' ] } );
 google.charts.setOnLoadCallback( drawChart );
 
-function drawChart() {
+function drawChart( mode ) {
 	var data = new google.visualization.DataTable();
 
-	data.addColumn('string', 'Version');
-	data.addColumn('number', 'react.js');
-	data.addColumn('number', 'react.js.gz');
-	data.addColumn('number', 'react.min.js');
-	data.addColumn('number', 'react.min.js.gz');
-	data.addColumn('number', 'react-dom.js');
-	data.addColumn('number', 'react-dom.min.js');
+	mode = mode || "Production";
 
-	data.addRows(
-		_.map( versions, function( version ) {
-			return [
-				version.version,
-				parseFloat( version[ "react.js" ] ),
-				parseFloat( version[ "react.js.gz" ] ),
-				parseFloat( version[ "react.min.js" ] ),
-				parseFloat( version[ "react.min.js.gz" ] ),
-				parseFloat( version[ "react-dom.js" ] ),
-				parseFloat( version[ "react-dom.min.js" ] )
-			];
-		} )
-	);
+	data.addColumn('string', 'Version');
+
+	if ( mode === "Production" ) {
+		data.addColumn('number', 'react.min.js');
+		data.addColumn('number', 'react.min.js.gz');
+		data.addColumn('number', 'react-dom.min.js');
+		data.addColumn('number', 'react-dom.min.js.gz');
+
+		data.addRows(
+			_.map( versions, function( version ) {
+				return [
+					version.version,
+					parseFloat( version[ "react.min.js" ] ),
+					parseFloat( version[ "react.min.js.gz" ] ),
+					parseFloat( version[ "react-dom.min.js" ] ),
+					parseFloat( version[ "react-dom.min.js.gz" ] )
+				];
+			} )
+		);
+	
+	} else {
+		data.addColumn('number', 'react.js');
+		data.addColumn('number', 'react-dom.js');
+
+		data.addRows(
+			_.map( versions, function( version ) {
+				return [
+					version.version,
+					parseFloat( version[ "react.js" ] ),
+					parseFloat( version[ "react-dom.js" ] ),
+				];
+			} )
+		);
+	}
 
 	var options = {
 		chart: {
@@ -544,4 +757,14 @@ window.addEventListener( "resize", _.throttle( function() {
 document.querySelector( "tbody tr:last-child").addEventListener( "mouseenter", function() {
 	var tbody = document.querySelector( "tbody" );
 	tbody.scrollTop = tbody.scrollHeight;
+} );
+	
+document.querySelector( ".toggle" ).addEventListener( "click", function( e ) {
+	if ( e.target.nodeName === "INPUT" ) {
+		var type = "Development";
+		if ( e.target.checked ) {
+			type = "Production";
+		}
+		drawChart( type );
+	}
 } );

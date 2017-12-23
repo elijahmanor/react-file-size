@@ -366,10 +366,37 @@ body {
 .GithubButtons {
   display: flex;
   justify-content: flex-end; }
-  .GithubButtons iframe, .GithubButtons a {
+  .GithubButtons iframe,
+  .GithubButtons a {
     margin-right: 1rem; }
   .GithubButtons iframe:last-child {
     margin-right: 0; }
+
+.table--fixed thead,
+.table--fixed tbody,
+.table--fixed tr {
+  display: block;
+  width: 100%; }
+
+.table--fixed tr {
+  overflow: hidden; }
+
+.table--fixed tbody {
+  overflow-y: auto;
+  height: 300px; }
+
+.table--fixed tbody td,
+.table--fixed thead th {
+  float: left;
+  border-bottom-width: 0; }
+  .table--fixed tbody td:after,
+  .table--fixed thead th:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0; }
 
 .table--fixed thead, .table--fixed tbody, .table--fixed tr {
   display: block;
@@ -405,10 +432,10 @@ body {
     display: none; }
 
 i.increase {
-  color: green; }
+  color: #3c763d; }
 
 i.decrease {
-  color: red; }
+  color: #a94442; }
 
 .table tr:hover span {
   display: inline; }
@@ -419,3 +446,36 @@ i.decrease {
 .table th:first-child,
 .table td:first-child {
   text-align: left; }
+
+.toggle {
+  margin-bottom: 1rem; }
+  .toggle .toggle-button:before, .toggle .toggle-button:after {
+    display: inline-block;
+    font-size: 1em;
+    padding: 0.5rem;
+    min-width: 125px;
+    text-align: center; }
+  .toggle .toggle-button:before {
+    content: attr(data-label-off);
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+    background-color: #fff;
+    margin-right: 1rem; }
+  .toggle .toggle-button:after {
+    content: attr(data-label-on);
+    color: #999;
+    background-color: #ccc;
+    border: 1px solid #999; }
+  .toggle .toggle-checkbox {
+    display: none; }
+    .toggle .toggle-checkbox:checked + .toggle-button:before {
+      color: #999;
+      font-weight: normal;
+      background-color: #ccc;
+      border: 1px solid #999; }
+    .toggle .toggle-checkbox:checked + .toggle-button:after {
+      color: black;
+      font-weight: bold;
+      background-color: #fff;
+      border: 1px solid black; }

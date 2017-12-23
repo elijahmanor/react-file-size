@@ -75,6 +75,9 @@ html.no-js
 							+ tableData(version.reactDom, previous ? previous.reactDom : null)
 							+ tableData(version.reactDomMin, previous ? previous.reactDomMin : null)
 		hr
+		div(class="toggle")
+			input(type="checkbox" id="toggle" class="toggle-checkbox" checked)
+			label(class="toggle-button" for="toggle" data-label-on="Production" data-label-off="Development")
 		div(id="linechart_material")
 		script(src='//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.6.1/lodash.min.js')
 		script(src='//www.gstatic.com/charts/loader.js')

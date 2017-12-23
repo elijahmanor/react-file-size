@@ -1,8 +1,8 @@
 @import "../node_modules/normalize.scss/normalize.scss";
 
 html {
-  max-width: 800px;
-  margin: 0 auto;
+	max-width: 800px;
+	margin: 0 auto;
 }
 
 body {
@@ -12,8 +12,48 @@ body {
 .GithubButtons {
 	display: flex;
 	justify-content: flex-end;
-	iframe, a { margin-right: 1rem; }
-	iframe:last-child { margin-right: 0; }
+
+	iframe,
+	a {
+		margin-right: 1rem;
+	}
+
+	iframe:last-child {
+		margin-right: 0;
+	}
+}
+
+.table--fixed {
+	thead,
+	tbody,
+	tr {
+		display: block;
+		width: 100%;
+	}
+
+	tr {
+		overflow: hidden;
+	}
+
+	tbody {
+		overflow-y: auto;
+		height: 300px;
+	}
+
+	tbody td,
+	thead th {
+		float: left;
+		border-bottom-width: 0;
+
+		&:after {
+			visibility: hidden;
+			display: block;
+			font-size: 0;
+			content: " ";
+			clear: both;
+			height: 0;
+		}
+	}
 }
 
 .table {
@@ -54,19 +94,86 @@ body {
 	text-align: right;
 	width: 20%;
 
-	span { display: none; }
-	i { display: none; }
+	span {
+		display: none;
+	}
+
+	i {
+		display: none;
+	}
 }
 
-i.increase { color: green; }
-i.decrease { color: red; }
+i.increase {
+	color: #3c763d;
+}
+
+i.decrease {
+	color: #a94442;
+}
 
 .table tr:hover {
-	span { display: inline; }
-	i { display: block; }
+	span {
+		display: inline;
+	}
+
+	i {
+		display: block;
+	}
 }
 
 .table th:first-child,
 .table td:first-child {
 	text-align: left;
 }
+
+.toggle {
+	margin-bottom: 1rem; 
+	
+	.toggle-button {
+	  &:before,
+	  &:after {
+		display: inline-block;
+		font-size: 1em;
+		padding: 0.5rem;
+		min-width: 125px;
+		text-align: center;
+	  }
+  
+	  &:before {
+		content: attr(data-label-off);
+		color: black;
+		font-weight: bold;
+		border: 1px solid black;
+		background-color: #fff;
+		margin-right: 1rem;
+	  }
+		  
+	  &:after {
+		content: attr(data-label-on);
+		color: #999;
+		background-color: #ccc;
+		border: 1px solid #999;
+	  }
+	}
+  
+	.toggle-checkbox {
+	  display: none;
+	  
+	  &:checked {
+		& + .toggle-button {
+		  &:before {
+			color: #999;
+			font-weight: normal;
+			background-color: #ccc;
+			border: 1px solid #999;
+		  }
+		  &:after {
+			color: black;
+			font-weight: bold;
+			background-color: #fff;
+			border: 1px solid black;
+		  }
+		}
+	  }
+	}
+  }

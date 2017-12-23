@@ -23,7 +23,8 @@
     "uglify:css": "node-sass src/index.scss public/index.min.css --output-style=compressed",
     "gh-pages": "git subtree push --prefix public origin gh-pages",
     "gh-pages:force": "git push origin `git subtree split --prefix public master`:gh-pages --force",
-    "gh-pages:refresh": "git push origin :gh-pages && git subtree push --prefix public origin gh-pages"
+    "gh-pages:refresh": "git push origin :gh-pages && git subtree push --prefix public origin gh-pages",
+    "clean": "rm -rf vendor && rm data.json"
   },
   "nyc": {
     "include": [
@@ -62,8 +63,9 @@
     "pretty-bytes": "^3.0.1",
     "request": "^2.74.0",
     "request-promise": "^4.1.1",
-    "shelljs": "^0.5.3",
-    "when": "^3.7.7"
+    "when": "^3.7.7",
+    "semver": "^5.4.1",
+    "shelljs": "^0.5.3"
   },
   "devDependencies": {
     "babel-eslint": "^5.0.0-beta6",
