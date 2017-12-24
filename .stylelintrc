@@ -1,0 +1,45 @@
+{
+	"ingoreFiles": [
+		"./node_modules/**/*.css",
+		"./public/*.css"
+	], 
+	"rules": {
+		"color-named": "never",
+		"color-no-invalid-hex": true,
+		"font-family-name-quotes": "always-where-required",
+		"function-max-empty-lines": 0,
+		"string-quotes": "double",
+		"time-no-imperceptible": true,
+		"property-no-vendor-prefix": true,
+		"declaration-no-important": true,
+		"declaration-block-no-duplicate-properties": true,
+		"declaration-block-no-ignored-properties": true,
+		"declaration-block-single-line-max-declarations": 1,
+		"block-no-empty": true,
+		"selector-class-pattern": [ "^(([a-zA-Z]*)+)(-(([a-z][a-zA-Z]+)+))?(--(([a-z][a-zA-Z]+)+))?$" ],
+		"selector-max-specificity": "1,0,1",
+		"selector-no-vendor-prefix": true,
+		"selector-list-comma-newline-after": "always",
+		"selector-list-comma-newline-before": "never-multi-line",
+		"rule-non-nested-empty-line-before": [
+			"always-multi-line", {
+				"ignore": [ "after-comment" ]
+			}
+		],
+		indentation: "tab",
+		"max-empty-lines": 1,
+		"max-nesting-depth": 3,
+		"no-browser-hacks": [ true, {
+			"browsers": [ "last 2 versions", "ie >=9" ]
+		} ],
+		"no-duplicate-selectors": true,
+		"no-indistinguishable-colors": [
+			true,
+			{ "threshold": 3 }
+		],
+		"no-unsupported-browser-features": [ true, {
+			"browsers": [ "last 2 versions", "ie >= 9" ],
+			"ignore": [ "rem", "css-transitions", "css-animation", "flexbox" ]
+		} ]
+	}
+}

@@ -3,6 +3,7 @@ import request from "request-promise";
 import cheerio from "cheerio";
 import gzipSize from "gzip-size";
 import when from "when";
+import semver from "semver";
 
 export function scrapeVersions( $ ) {
 	return $( ".version-selector option" )
@@ -45,9 +46,28 @@ export function getFile( name, version, path, url, spinner ) {
 export function getStatistics( name, versions, spinner ) {
 	return new Promise( ( resolve, reject ) => {
 		spinner.text = `Getting statistics for ${ name }...`;
+
 		const promises = versions.reduce( ( memo, version ) => {
-			memo.push( getFile( `${ name }.js`, version, `vendor/${ name }-${ version }.js`, `https://cdnjs.cloudflare.com/ajax/libs/react/${ version }/${ name }.js`, spinner ) );
-			memo.push( getFile( `${ name }.min.js`, version, `vendor/${ name }-${ version }.min.js`, `https://cdnjs.cloudflare.com/ajax/libs/react/${ version }/${ name }.min.js`, spinner ) );
+			memo.push(
+				getFile(
+					`${ name }.js`,
+					version,
+					`vendor/${ name }-${ version }.js`,
+					semver.lt( version, "16.0.0" ) ?
+						`https://cdnjs.cloudflare.com/ajax/libs/${ name }/${ version }/${ name }.js` :
+						`https://cdnjs.cloudflare.com/ajax/libs/${ name }/${ version }/cjs/${ name }.development.js`,
+					spinner
+				) );
+			memo.push(
+				getFile(
+					`${ name }.min.js`,
+					version,
+					`vendor/${ name }-${ version }.min.js`,
+					semver.lt( version, "16.0.0" ) ?
+						`https://cdnjs.cloudflare.com/ajax/libs/${ name }/${ version }/${ name }.min.js` :
+						`https://cdnjs.cloudflare.com/ajax/libs/${ name }/${ version }/cjs/${ name }.production.min.js`,
+					spinner
+				) );
 			return memo;
 		}, [] );
 		resolve( when.reduce( promises, ( memo, value ) => {

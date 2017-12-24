@@ -1,6 +1,6 @@
 #!/usr/bin/env node --harmony
-var path = require( "path" );
-var dir = path.basename( __dirname );
+const path = require( "path" );
+const dir = path.basename( __dirname );
 
 require( "babel-register" )( {
 	ignore: false,

@@ -36,7 +36,7 @@ const defaults = {
 
 function getStubs( options ) {
 	return merge( {}, defaults, options );
-};
+}
 
 describe( "Utils", () => {
 	describe( "scrapeVersions", () => {
@@ -58,7 +58,7 @@ describe( "Utils", () => {
 
 		beforeEach( () => {
 			stubs = getStubs( {
-				"request-promise" : sinon.stub().returns( Promise.resolve( defaults.$ ) )
+				"request-promise": sinon.stub().returns( Promise.resolve( defaults.$ ) )
 			} );
 			getVersions = proxyquire( "../src/utils.js", stubs ).getVersions;
 		} );
@@ -71,7 +71,7 @@ describe( "Utils", () => {
 
 		it( "should parse the body content with cheerio", () => {
 			stubs = getStubs( {
-				"request-promise" : sinon.stub()
+				"request-promise": sinon.stub()
 					.yieldsTo( "transform", "body" )
 					.returns( Promise.resolve( defaults.$ ) )
 			} );
@@ -82,8 +82,8 @@ describe( "Utils", () => {
 		} );
 
 		it( "should return a list of versions", () => {
-			return getVersions( "http://elijahmanor.com ").then( versions => {
-				versions.should.eql( [ "1.0.0", "2.0.0", "3.0.0" ] );
+			return getVersions( "http://elijahmanor.com" ).then( versions => {
+				versions.should.eql( [ "3.0.0", "2.0.0", "1.0.0" ] );
 			} );
 		} );
 	} );
@@ -187,7 +187,7 @@ describe( "Utils", () => {
 		it( "should get gZip of 0 if file is empty", () => {
 			stubs = getStubs( {
 				fs: {
-					readFileSync: sinon.stub().returns( "" ),
+					readFileSync: sinon.stub().returns( "" )
 				},
 				"gzip-size": {
 					sync: sinon.stub().returns( 0 )
@@ -211,4 +211,4 @@ describe( "Utils", () => {
 			} );
 		} );
 	} );
-});
+} );

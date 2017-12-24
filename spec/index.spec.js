@@ -6,7 +6,7 @@ import dirtyChai from "dirty-chai";
 import { isPromise } from "./helpers";
 import { merge } from "lodash";
 
-const should = chai.should();
+const should = chai.should(); // eslint-disable-line no-unused-vars
 chai.use( sinonChai );
 chai.use( dirtyChai );
 
@@ -42,7 +42,7 @@ const defaults = {
 
 function getStubs( options ) {
 	return merge( {}, defaults, options );
-};
+}
 
 describe( "Index", () => {
 	describe( "createFolder", () => {
@@ -113,7 +113,7 @@ describe( "Index", () => {
 				{ name: "react.min.js", version: "1.0.0", size: 12, sizeGzipped: 10 },
 				{ name: "react.js", version: "2.0.0", size: 234, sizeGzipped: 230 },
 				{ name: "react.min.js", version: "2.0.0", size: 23, sizeGzipped: 20 }
-			]
+			];
 			const reactDomStats = [
 				{ name: "react-dom.js", version: "1.0.0", size: 123, sizeGzipped: 120 },
 				{ name: "react-dom.min.js", version: "1.0.0", size: 12, sizeGzipped: 10 },
@@ -123,22 +123,26 @@ describe( "Index", () => {
 			const stats = mapStats( versions, reactStats, reactDomStats );
 			stats.should.eql( [
 				{
-					"version": "1.0.0",
-					"react": 123,
-					"reactDom": 123,
-					"reactDomMin": 12,
-					"reactGz": 120,
-					"reactMin": 12,
-					"reactMinGz": 10
+					version: "1.0.0",
+					react: 123,
+					reactDom: 123,
+					reactDomGz: 120,
+					reactDomMin: 12,
+					reactDomMinGz: 10,
+					reactGz: 120,
+					reactMin: 12,
+					reactMinGz: 10
 				},
 				{
-					"version": "2.0.0",
-					"react": 234,
-					"reactDom": 234,
-					"reactDomMin": 23,
-					"reactGz": 230,
-					"reactMin": 23,
-					"reactMinGz": 20
+					version: "2.0.0",
+					react: 234,
+					reactDom: 234,
+					reactDomGz: 230,
+					reactDomMin: 23,
+					reactDomMinGz: 20,
+					reactGz: 230,
+					reactMin: 23,
+					reactMinGz: 20
 				} ]
 			);
 		} );
@@ -146,30 +150,34 @@ describe( "Index", () => {
 		it( "should default to zero bytes if size is undefined", () => {
 			const versions = [ "1.0.0", "2.0.0" ];
 			const reactStats = [
-				{ name: "react.js", version: "1.0.0"  },
-				{ name: "react.js", version: "2.0.0" },
-			]
+				{ name: "react.js", version: "1.0.0" },
+				{ name: "react.js", version: "2.0.0" }
+			];
 			const reactDomStats = [
 			];
 			const stats = mapStats( versions, reactStats, reactDomStats );
 			stats.should.eql( [
 				{
-					"version": "1.0.0",
-					"react": 0,
-					"reactDom": 0,
-					"reactDomMin": 0,
-					"reactGz": 0,
-					"reactMin": 0,
-					"reactMinGz": 0
+					version: "1.0.0",
+					react: 0,
+					reactDom: 0,
+					reactDomGz: 0,
+					reactDomMin: 0,
+					reactDomMinGz: 0,
+					reactGz: 0,
+					reactMin: 0,
+					reactMinGz: 0
 				},
 				{
-					"version": "2.0.0",
-					"react": 0,
-					"reactDom": 0,
-					"reactDomMin": 0,
-					"reactGz": 0,
-					"reactMin": 0,
-					"reactMinGz": 0
+					version: "2.0.0",
+					react: 0,
+					reactDom: 0,
+					reactDomGz: 0,
+					reactDomMin: 0,
+					reactDomMinGz: 0,
+					reactGz: 0,
+					reactMin: 0,
+					reactMinGz: 0
 				} ]
 			);
 		} );

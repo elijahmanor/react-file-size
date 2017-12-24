@@ -16,11 +16,11 @@ export function getAllStats( versions, spinner ) {
 	return Promise.all( [
 		getStatistics( "react", versions, spinner ),
 		getStatistics( "react-dom", versions, spinner )
-	] )
+	] );
 }
 
 export function mapStats( versions, reactStats, reactDomStats ) {
-	return versions.map( version => {
+	return versions.map( version => { // eslint-disable-line complexity
 		const react = _.find( reactStats, { version, name: "react.js" } );
 		const reactMinified = _.find( reactStats, { version, name: "react.min.js" } );
 		const reactDom = _.find( reactDomStats, { version, name: "react-dom.js" } );
@@ -32,7 +32,9 @@ export function mapStats( versions, reactStats, reactDomStats ) {
 			reactMin: reactMinified ? reactMinified.size : 0,
 			reactMinGz: reactMinified ? reactMinified.sizeGzipped : 0,
 			reactDom: reactDom ? reactDom.size : 0,
-			reactDomMin: reactDomMinified ? reactDomMinified.size : 0
+			reactDomGz: reactDom ? reactDom.sizeGzipped : 0,
+			reactDomMin: reactDomMinified ? reactDomMinified.size : 0,
+			reactDomMinGz: reactDomMinified ? reactDomMinified.sizeGzipped : 0
 		};
 	} );
 }
@@ -61,6 +63,6 @@ export function bootstrap() {
 		spinner.text = `Houston, we have a problem: ${ error.message }`;
 		spinner.fail();
 	} );
-};
+}
 
 bootstrap();
