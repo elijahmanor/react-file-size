@@ -5,6 +5,8 @@ import gzipSize from "gzip-size";
 import when from "when";
 import semver from "semver";
 
+const CDN_BASE = "https://cdnjs.cloudflare.com/ajax/libs";
+
 export function scrapeVersions( $ ) {
 	return $( ".version-selector option" )
 		.get().map( el => el.attribs.value )
@@ -54,8 +56,8 @@ export function getStatistics( name, versions, spinner ) {
 					version,
 					`vendor/${ name }-${ version }.js`,
 					semver.lt( version, "16.0.0" ) ?
-						`https://cdnjs.cloudflare.com/ajax/libs/${ name }/${ version }/${ name }.js` :
-						`https://cdnjs.cloudflare.com/ajax/libs/${ name }/${ version }/cjs/${ name }.development.js`,
+						`${ CDN_BASE }/${ name }/${ version }/${ name }.js` :
+						`${ CDN_BASE }/${ name }/${ version }/cjs/${ name }.development.js`,
 					spinner
 				) );
 			memo.push(
@@ -64,8 +66,8 @@ export function getStatistics( name, versions, spinner ) {
 					version,
 					`vendor/${ name }-${ version }.min.js`,
 					semver.lt( version, "16.0.0" ) ?
-						`https://cdnjs.cloudflare.com/ajax/libs/${ name }/${ version }/${ name }.min.js` :
-						`https://cdnjs.cloudflare.com/ajax/libs/${ name }/${ version }/cjs/${ name }.production.min.js`,
+						`${ CDN_BASE }/${ name }/${ version }/${ name }.min.js` :
+						`${ CDN_BASE }/${ name }/${ version }/cjs/${ name }.production.min.js`,
 					spinner
 				) );
 			return memo;

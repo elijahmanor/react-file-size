@@ -692,6 +692,17 @@
       "reactDomGz": 127665,
       "reactDomMin": 92699,
       "reactDomMinGz": 29787
+    },
+    {
+      "version": "16.3.0",
+      "react": 46575,
+      "reactGz": 13051,
+      "reactMin": 5663,
+      "reactMinGz": 2488,
+      "reactDom": 601200,
+      "reactDomGz": 138035,
+      "reactDomMin": 100686,
+      "reactDomMinGz": 31778
     }
   ]
 }
